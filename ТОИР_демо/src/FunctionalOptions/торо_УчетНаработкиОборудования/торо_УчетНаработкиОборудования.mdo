@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a1a7f57e-5468-4c8f-a0da-4d9ee9c7c011">
+  <name>торо_УчетНаработкиОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет наработки оборудования</value>
+  </synonym>
+  <comment></comment>
+  <location>Constant.торо_УчетНаработкиОборудования</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.ПараметрыВыработкиОС</content>
+  <content>Document.торо_УчетНаработкиОборудования</content>
+  <content>Report.торо_НаработкаОборудования</content>
+  <content>Report.торо_НаработкаОРПоДатам</content>
+  <content>Catalog.торо_СпособыПланированияРемонтныхРабот.Attribute.ИспользоватьПараметрыНаработки</content>
+  <content>Document.торо_УстановкаПроизвольногоЗначенияНаработки</content>
+  <content>Document.торо_НастройкаРегистрацииНаработкиЗависимыхОР</content>
+  <content>Catalog.торо_ПричиныИзмененияНаработки</content>
+  <content>Catalog.торо_СпособыПланированияРемонтныхРабот.TabularSection.ПараметрыНаработки</content>
+  <content>CommonCommand.ПанельОтчетов_торо_УчетПоказателейЭксплуатации</content>
+  <content>Subsystem.торо_УчетПоказателейЭксплуатации</content>
+  <content>Report.торо_СостояниеОборудования</content>
+</mdclass:FunctionalOption>

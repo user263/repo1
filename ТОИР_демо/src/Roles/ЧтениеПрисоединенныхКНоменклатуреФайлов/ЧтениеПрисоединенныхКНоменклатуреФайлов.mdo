@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="81962836-7d64-48ba-b12a-656880ed208b">
+  <name>ЧтениеПрисоединенныхКНоменклатуреФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение присоединенных к номенклатуре файлов</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

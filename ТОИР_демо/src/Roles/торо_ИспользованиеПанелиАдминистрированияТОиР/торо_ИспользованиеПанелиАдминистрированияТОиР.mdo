@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2af9d181-111c-421a-98b1-3d2e476634e7">
+  <name>торо_ИспользованиеПанелиАдминистрированияТОиР</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование панели администрирования ТОиР</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

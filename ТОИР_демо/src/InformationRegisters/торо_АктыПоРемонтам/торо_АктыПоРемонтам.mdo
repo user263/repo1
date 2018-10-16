@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cf015750-fecb-4403-8fa8-9a7c04dc6f3a">
+  <producedTypes>
+    <selectionType typeId="cc2690ec-aa8a-41b4-834b-e2f0122bde78" valueTypeId="4598cee0-db3c-4666-9063-8690381692fc"/>
+    <listType typeId="b92c4db2-7e05-465a-9fd8-b927660e1ac2" valueTypeId="ad2854a2-8467-426e-810d-d9a9da0b5d75"/>
+    <managerType typeId="fcbe1400-6092-4fb2-b4c1-fbcf14d814a0" valueTypeId="1a323f69-3635-485a-a2b2-8f1ddd1b7d25"/>
+    <recordSetType typeId="9f809ebb-68a9-45a6-bb47-c623d6cdf6d9" valueTypeId="e7bd5e4e-69d4-4d59-9b8d-3c923ed00869"/>
+    <recordKeyType typeId="e807c1c6-76c2-4c76-b296-19d2e303a342" valueTypeId="c66a3ecd-013e-4b96-9b3a-d024df97a36b"/>
+    <recordType typeId="b4ffd230-4670-49e0-a721-440ef2aedc71" valueTypeId="868ac513-1da2-4fad-9555-d501f449894f"/>
+    <recordManagerType typeId="4f042ae3-3bda-4dbd-94ce-671efb8da836" valueTypeId="dbf82df7-4954-4624-abea-7977cb699dc7"/>
+  </producedTypes>
+  <name>торо_АктыПоРемонтам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Акты по ремонтам</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Период записи регистра</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="57c5fdd0-42ec-46c7-a1ae-debb0b8689c3">
+    <name>IDРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>IDРемонта</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор ремонта</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

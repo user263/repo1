@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9eda9af7-92dd-4c01-9d38-b4ce87e8d9e1">
+  <producedTypes>
+    <refType typeId="0222447e-19f0-4517-9c17-f24a73325484" valueTypeId="307c1d35-4b06-4ddc-8c9c-21a13833ce79"/>
+    <listType typeId="45ff5486-2ce1-4ec2-8a26-307831a202e3" valueTypeId="71f98274-2f60-4094-90bf-286c82ba233c"/>
+    <managerType typeId="42372c24-b97b-4335-b215-d9d25a7f7dae" valueTypeId="00fb2466-d1a7-4c09-aec1-90679b2e104c"/>
+  </producedTypes>
+  <name>торо_ТипЭксплуатации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип эксплуатации</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="b1bca3f9-c782-4db3-a70c-408ff119917b">
+    <name>Эксплуатация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Эксплуатация</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="83b4eec1-bc48-49ab-a0c5-a96e83519ce3">
+    <name>Простой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Простой</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b82c0753-cbee-4fae-aab6-2ae4e124c1f7">
+    <name>Испытания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Испытания</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

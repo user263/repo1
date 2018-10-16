@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aa73d472-829e-4d6e-be5b-04b9d791d6c6">
+  <producedTypes>
+    <objectType typeId="c49dc786-bce5-446c-920f-992e958217ba" valueTypeId="83830d98-8e15-43e3-ba42-f46b8d6c1ab5"/>
+    <managerType typeId="a90268c8-14f2-43df-9091-d11f7cded9c7" valueTypeId="03396363-69de-4284-b0c0-9f7d8eaed692"/>
+  </producedTypes>
+  <name>торо_ПанельОтчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Панель отчетов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.торо_ПанельОтчетов.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.торо_ПанельОтчетов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ВспомогательнаяФормаНастроекОтчета</defaultSettingsForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="c4eafc1f-e6eb-4c6e-a185-aad2927c9e11">
+    <name>РеквизитМакет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизит макет</value>
+    </synonym>
+    <comment></comment>
+    <type/>
+    <toolTip>
+      <key>ru</key>
+      <value>(Реквизит макет)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d15ca74e-6a83-4ad6-a3c2-8958742368cc">
+    <name>СкрыватьНастройкиПриФормировании</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скрывать настройки при формировании</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Скрывать настройки при формировании)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="750ffcd0-fbaf-4829-a004-20a4f3e513d5">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a7f868ad-5f4f-412d-8592-998f669a6b37">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="3d6994e4-2e8c-415d-bcbf-8d0dd4ce2fb3">
+    <name>МакетШапка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет шапка</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:Report>

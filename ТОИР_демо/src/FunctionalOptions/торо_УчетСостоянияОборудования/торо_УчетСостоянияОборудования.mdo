@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8396c637-d450-48f5-8238-353cc2563a8b">
+  <name>торо_УчетСостоянияОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет состояния оборудования</value>
+  </synonym>
+  <comment></comment>
+  <location>Constant.торо_УчетСостоянияОборудования</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.торо_ВидыЭксплуатации</content>
+  <content>Catalog.торо_ПричиныПростояОборудования</content>
+  <content>Document.торо_СостоянияОбъектовРемонта</content>
+  <content>Report.торо_ПростойОборудования</content>
+  <content>Report.торо_ИсторияОстановаЗапускаОборудования</content>
+  <content>Report.торо_ПлановыеОстановыОборудования</content>
+  <content>CommonCommand.ПанельОтчетов_торо_УчетПоказателейЭксплуатации</content>
+  <content>Subsystem.торо_УчетПоказателейЭксплуатации</content>
+  <content>Catalog.торо_ТиповыеОР.TabularSection.НормативныеРемонты.Attribute.УчитыватьПростоиОборудования</content>
+</mdclass:FunctionalOption>

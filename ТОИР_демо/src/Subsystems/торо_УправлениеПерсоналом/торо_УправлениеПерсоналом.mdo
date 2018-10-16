@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c439a431-4ec3-42e6-9080-0f4571e9b641">
+  <name>торо_УправлениеПерсоналом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление персоналом</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.торо_ПодсистемаУправлениеПерсоналом</picture>
+  </picture>
+  <content>Document.торо_ПрисвоениеКвалификацийСотрудникам</content>
+  <content>Enum.торо_ВидыОперацийСКвалификациями</content>
+  <content>InformationRegister.торо_КвалификацияРемонтногоПерсонала</content>
+  <content>Catalog.торо_РесурсыРемонтнойБригады</content>
+  <content>Catalog.торо_РемонтныеБригады</content>
+  <content>Document.торо_ИзменениеСоставаРемонтнойБригады</content>
+  <content>Catalog.Сотрудники</content>
+  <content>Catalog.Должности</content>
+  <content>Document.ПриемНаРаботу</content>
+  <content>InformationRegister.КадроваяИсторияСотрудников</content>
+  <content>InformationRegister.ТекущиеКадровыеДанныеСотрудников</content>
+  <content>InformationRegister.ФИОФизическихЛиц</content>
+  <content>InformationRegister.ВремяРегистрацииДокументовПлановыхНачислений</content>
+  <content>Document.КадровыйПеревод</content>
+  <content>Document.Увольнение</content>
+  <content>InformationRegister.торо_ТекущиеТарифныеСтавкиСотрудников</content>
+  <content>Document.торо_УстановкаСтоимостейКвалификаций</content>
+  <content>Role.торо_РазделУправлениеПерсоналом</content>
+  <content>Role.торо_ЧтениеРемонтныхБригад</content>
+  <content>Role.торо_ДобавлениеИзменениеПометкаУдаленияРемонтныхБригады</content>
+  <content>Role.торо_ЧтениеРесурсовРемонтнойБригады</content>
+  <content>Role.торо_ДобавлениеИзменениеПометкаУдаленияРесурсовРемонтнойБригады</content>
+  <content>Role.ДобавлениеИзменениеПометкаУдаленияДолжностей</content>
+  <content>Role.ЧтениеДолжностей</content>
+  <content>Role.ЧтениеСотрудников</content>
+  <content>Role.ДобавлениеИзменениеПометкаУдаленияСотрудников</content>
+  <content>Role.торо_ЧтениеИзмененийСоставаРемонтнойБригады</content>
+  <content>Role.торо_ДобавлениеИзменениеПроведениеПометкаУдаленияИзмененийСоставаРемонтнойБригады</content>
+  <content>Role.торо_ЧтениеПрисвоенийКвалификацийСотрудникам</content>
+  <content>Role.торо_ДобавлениеИзменениеПроведениеПометкаУдаленияПрисвоенийКвалификацийСотрудникам</content>
+  <content>Role.торо_ЧтениеУстановокСтоимостейКвалификаций</content>
+  <content>Role.торо_ДобавлениеИзменениеПроведениеПометкаУдаленияУстановокСтоимостейКвалификаций</content>
+  <content>Role.ЧтениеКадровыхПереводов</content>
+  <content>Role.ДобавлениеИзменениеПроведениеПометкаУдаленияКадровыхПереводов</content>
+  <content>Role.ЧтениеПриемовНаРаботу</content>
+  <content>Role.ДобавлениеИзменениеПроведениеПометкаУдаленияПриемовНаРаботу</content>
+  <content>Role.ЧтениеУвольнений</content>
+  <content>Role.ДобавлениеИзменениеПроведениеПометкаУдаленияУвольнений</content>
+  <content>Role.торо_ДобавлениеИзменениеПометкаУдаленияКвалификацийРемонтногоПерсонала</content>
+  <content>Role.торо_ЧтениеКвалификацийРемонтногоПерсонала</content>
+  <content>CommonPicture.торо_ПодсистемаУправлениеПерсоналом</content>
+  <content>InformationRegister.ГрафикРаботыСотрудников</content>
+  <content>InformationRegister.торо_СоставРемонтныхБригад</content>
+  <content>Catalog.торо_КвалификацииРемонтногоПерсонала</content>
+  <content>Catalog.ФизическиеЛица</content>
+  <content>InformationRegister.торо_СтоимостьЧасаКвалификации</content>
+  <content>Catalog.торо_Комиссии</content>
+  <content>DataProcessor.торо_ПечатьКадровыхПриказов</content>
+  <content>Enum.торо_ОтветственныеЛица</content>
+  <content>Report.УниверсальныйОтчет</content>
+</mdclass:Subsystem>

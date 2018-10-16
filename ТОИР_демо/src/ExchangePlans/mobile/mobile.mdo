@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8609fc17-9699-4894-b538-e81ce832e48e" thisNode="f715b6d6-bc06-4f3b-afc5-d170962cbbeb">
+  <producedTypes>
+    <objectType typeId="9afd6c2a-4fe1-41e8-bffe-61e793fb623e" valueTypeId="27e8e22b-47a5-4a67-8d1a-9add304e1893"/>
+    <refType typeId="ca356e4b-1c07-4649-8aba-ef46e7497f99" valueTypeId="4946471f-a02a-4ccd-8aa7-5a5d5f21fe8b"/>
+    <selectionType typeId="ae2c2729-17f8-41f9-af9a-ab99f6ba828a" valueTypeId="786ea4d2-9ef6-4e68-b2be-ecad783b4039"/>
+    <listType typeId="f5c8b5ee-eb3e-4582-995b-77953692b2fc" valueTypeId="5b0d4dca-b7b4-42ea-b0b8-fbc72e53ff35"/>
+    <managerType typeId="7cfc5b06-c291-409a-8843-94c9c69b5252" valueTypeId="bdff0a4c-4368-491a-b197-88935d0b3e99"/>
+  </producedTypes>
+  <name>mobile</name>
+  <synonym>
+    <key>ru</key>
+    <value>Mobile</value>
+  </synonym>
+  <comment></comment>
+  <inputByString>ExchangePlan.mobile.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.mobile.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ThisNode</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ReceivedNo</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>SentNo</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>150</descriptionLength>
+  <content>
+    <mdObject>InformationRegister.торо_ТекущееСостояниеОР</mdObject>
+  </content>
+  <content>
+    <mdObject>AccumulationRegister.торо_НаработкаОбъектовРемонта</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.торо_ВидыДефектов</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.торо_ПричиныПростояОборудования</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.торо_ВидыЭксплуатации</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.СтруктураПредприятия</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.торо_УсловияВыявленияДефекта</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.торо_КритичностьДефекта</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.торо_РасположениеОРВСтруктуреИерархии</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.ПараметрыВыработкиОС</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.торо_ПараметрыНаработкиОбъектовРемонта</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.торо_ТиповыеДефектыОборудования</mdObject>
+  </content>
+  <content>
+    <mdObject>ChartOfCharacteristicTypes.торо_ИзмеряемыеПоказателиОбъектовРемонта</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.ЕдиницыИзмерения</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.Организации</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.торо_ОбъектыРемонта</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.торо_ТиповыеОР</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.торо_НаправленияОбъектовРемонтныхРабот</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.торо_ИерархическиеСтруктурыОР</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.торо_ИзмеряемыеПоказателиОбъектовРемонта</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.Номенклатура</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.торо_ПричиныДефектов</mdObject>
+  </content>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="30bb9d04-2428-4645-8f0f-8bbcccd97385">
+    <name>ИДМобильногоУстройства</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID мобильного устройства</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+</mdclass:ExchangePlan>

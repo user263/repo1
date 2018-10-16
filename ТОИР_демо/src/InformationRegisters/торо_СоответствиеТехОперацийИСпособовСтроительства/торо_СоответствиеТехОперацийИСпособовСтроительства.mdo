@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de983ee4-d3f5-4124-aa66-e119a254ffb8">
+  <producedTypes>
+    <selectionType typeId="f08f1a12-10e2-4a09-ba2c-9393d1021394" valueTypeId="ecb084a0-ec3e-46ce-8f00-6cb0bcba2aa7"/>
+    <listType typeId="61dc6d31-2cc0-47f5-83c9-e42f305eb12a" valueTypeId="3d776c5c-2672-46d2-83c9-147fafc95fbf"/>
+    <managerType typeId="f650c25a-9640-4f12-a461-964766f3310b" valueTypeId="d093e124-fcb4-451a-ba69-e4e54af0f12f"/>
+    <recordSetType typeId="7c3301de-bdbb-4ecc-8dff-6de12f7ac9c0" valueTypeId="5eeb0c12-9f18-4b28-9611-6a992e6f8da1"/>
+    <recordKeyType typeId="1871bfed-cd35-4561-9939-3ae56c34b11c" valueTypeId="e067aa22-19aa-4d32-a673-503fb1fb40b8"/>
+    <recordType typeId="5b9536a3-1dd2-4fe6-8e50-cc64e3744173" valueTypeId="3e37e8a7-9990-4388-a403-c37ff6e3f346"/>
+    <recordManagerType typeId="5bd4a035-b2cd-4d8b-9e14-64da3c889cc0" valueTypeId="1f16719d-e941-4b86-823c-60d21aff35b3"/>
+  </producedTypes>
+  <name>торо_СоответствиеТехОперацийИСпособовСтроительства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие тех операций и способов строительства</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f1919e85-6513-4e71-b092-e0bab8473bf1">
+    <name>СпособСтроительства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ строительства</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СпособыСтроительства</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Способ строительства)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="b1afe185-8eb2-44b7-bcba-9a54871edf6c">
+    <name>НаименованиеТехОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование тех операции</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>55</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Наименование тех операции)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="33d49640-9dc0-467d-8e58-35b6c64f51bb">
+    <name>РемонтыОборудования_ID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ремонты оборудования ID</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Ремонты оборудования ID)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="72f6244d-eb10-432d-85ff-c52e6a515baa">
+    <name>ID_ТехОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тех. операция</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Тех. операция)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

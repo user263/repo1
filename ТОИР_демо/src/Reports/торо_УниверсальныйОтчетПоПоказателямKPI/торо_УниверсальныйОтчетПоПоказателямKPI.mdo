@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95a4c82a-0756-4e95-8744-d48a25ffbe5f">
+  <producedTypes>
+    <objectType typeId="849feb14-09dc-4460-a396-9c7fe067b88e" valueTypeId="1f2af708-eec2-4c04-b0a3-09e5ab107049"/>
+    <managerType typeId="c1202e21-4294-4b88-a140-0d10d98d6f96" valueTypeId="34d67865-0c67-4728-ab60-13d7644a0174"/>
+  </producedTypes>
+  <name>торо_УниверсальныйОтчетПоПоказателямKPI</name>
+  <synonym>
+    <key>ru</key>
+    <value>Универсальный отчет по показателям KPI</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.торо_УниверсальныйОтчетПоПоказателямKPI.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="977b5698-1373-4a19-97da-e4e906210589">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

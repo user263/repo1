@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ae0c1a6-f68f-4975-a3f4-b8c3e9b551b7">
+  <name>КЗ_sw64</name>
+  <synonym>
+    <key>ru</key>
+    <value>Компонента программной защиты для Windows 64</value>
+  </synonym>
+  <comment></comment>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

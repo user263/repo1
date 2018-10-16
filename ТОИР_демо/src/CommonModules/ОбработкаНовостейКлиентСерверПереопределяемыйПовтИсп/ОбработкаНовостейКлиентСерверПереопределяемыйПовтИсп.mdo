@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d9ff39c8-aa20-4754-9f59-36d119e82658">
+  <name>ОбработкаНовостейКлиентСерверПереопределяемыйПовтИсп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка новостей клиент сервер переопределяемый (повт. исп)</value>
+  </synonym>
+  <comment></comment>
+  <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+  <returnValuesReuse>DuringSession</returnValuesReuse>
+</mdclass:CommonModule>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6a08f94a-9e62-4cb8-bcdb-878fcd1a6d5a">
+  <name>Обмен_mobile_РегистрацияНабора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен ТОиР 2.0 ERP 2.0 зарегистрировать изменение</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>InformationRegisterRecordSet.торо_ИзмеряемыеПоказателиОбъектовРемонта</types>
+    <types>InformationRegisterRecordSet.торо_ТекущееСостояниеОР</types>
+    <types>InformationRegisterRecordSet.торо_ПараметрыНаработкиОбъектовРемонта</types>
+    <types>InformationRegisterRecordSet.торо_ИерархическиеСтруктурыОР</types>
+    <types>InformationRegisterRecordSet.торо_РасположениеОРВСтруктуреИерархии</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.Обмен_mobile_События.Обмен_mobile_ЗарегистрироватьИзменениеНабораЗаписейПередЗаписью</handler>
+</mdclass:EventSubscription>

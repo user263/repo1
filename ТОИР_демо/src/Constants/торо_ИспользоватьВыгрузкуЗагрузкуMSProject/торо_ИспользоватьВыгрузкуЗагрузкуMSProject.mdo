@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c268161d-5692-4603-bad6-6d4853bf8196">
+  <producedTypes>
+    <managerType typeId="f2c184b4-9d15-4066-adbf-83d11368c138" valueTypeId="9d5e7fe6-3d15-40eb-847e-e04cc6adcfb4"/>
+    <valueManagerType typeId="dfbb6d34-f93e-47de-ad98-244eaf8a390c" valueTypeId="7957aad6-6f93-4823-817d-c982372213e4"/>
+  </producedTypes>
+  <name>торо_ИспользоватьВыгрузкуЗагрузкуMSProject</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать команды выгрузки/загрузки в MS Project</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

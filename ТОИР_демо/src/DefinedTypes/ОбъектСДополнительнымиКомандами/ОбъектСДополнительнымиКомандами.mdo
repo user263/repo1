@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c7c12744-4b1b-4ef5-949a-321db3d67dbe">
+  <producedTypes>
+    <containerType typeId="282a55f1-6cc7-4e43-8195-e8c5dad96225" valueTypeId="c5e60d7a-9fe1-422c-8124-5cb312af04be"/>
+  </producedTypes>
+  <name>ОбъектСДополнительнымиКомандами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объект с дополнительными командами</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+  </type>
+</mdclass:DefinedType>

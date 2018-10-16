@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d2df5c6c-796a-4746-9745-6c0cbb0f709a">
+  <producedTypes>
+    <selectionType typeId="c4e464e9-921f-4e70-8c1a-5474b9b2c12e" valueTypeId="354cf957-55ac-42fc-9c9e-c3a449125615"/>
+    <listType typeId="983e44ec-d8cb-4891-bba8-ec187080f108" valueTypeId="8081df1b-a872-4fd6-92d0-6af03d55c3d4"/>
+    <managerType typeId="d7245516-fac5-49e1-88cb-dba147bd6b17" valueTypeId="20f2faf1-3fb9-479d-bbbe-8cc1be917a9c"/>
+    <recordSetType typeId="b0a5ee7a-c403-4232-a5d5-f414b323db2e" valueTypeId="92805cfe-ee2d-42f8-ab78-813fb8677c89"/>
+    <recordKeyType typeId="f0357d42-bf87-4fd1-89c7-f90964d49db6" valueTypeId="b062bbf7-0182-4855-a3f4-2ff066436a6d"/>
+    <recordType typeId="2e390e48-16d7-4865-8f0d-790d9c329592" valueTypeId="1bbae305-c8f1-46ef-8680-692e56c02133"/>
+    <recordManagerType typeId="896db8ca-ed3c-429d-ba26-05a6e7c1cd0f" valueTypeId="06130ccb-31bd-4df7-a36a-643f6fcfc3ec"/>
+  </producedTypes>
+  <name>торо_ДетальнаяНастройкаВРазрезеНаправлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Детальная настройка в разрезе направлений</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7f5b2f10-bd5e-4824-9ed9-fd041c71e058">
+    <name>ИспользоватьКонтролируемыеПоказатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать контролируемые показатели</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Использовать контролируемые показатели)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ada3a928-d4fc-4d26-afd7-924f63e3cb35">
+    <name>ИспользоватьНаработкуОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать наработку оборудования</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Использовать наработку оборудования)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d5d50177-ddd7-47f4-b01f-45b77e6d3aa6">
+    <name>ИспользоватьСостоянияОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать состояния оборудования</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Использовать состояния оборудования)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a520a4e6-2b9f-430f-93d3-8d3446105291">
+    <name>ИспользоватьУчетВД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать учет выявленных дефектов</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Использовать учет выявленных дефектов)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c3b66808-9f22-4bc1-b5a8-4bdb94e003ef">
+    <name>ИспользоватьППР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать планово-предупредительный ремонт</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Использовать планово-предупредительный ремонт)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="899b243b-7ee4-4fe3-b6c9-f90296e4d791">
+    <name>ИспользоватьЖесткиеРемонтныеЦиклы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать жесткие ремонтные циклы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Использовать жесткие ремонтные циклы)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="db6ce3bf-ef34-4045-8633-c2556552a077">
+    <name>ИспользоватьНарядыНаВыполнениеРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать наряды на выполнение работ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Использовать наряды на выполнение работ)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a0824101-fa7a-4cdf-8238-339df4461668">
+    <name>ИспользоватьВозможностьОтменыРемонтов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать возможность отмены ремонтов</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Использовать возможность отмены ремонтов)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e5feb77f-0a3c-4afa-8347-42819e608a99">
+    <name>ИспользоватьРемонтыПоСостоянию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать ремонты по состоянию</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Использовать ремонты по состоянию)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="e5749780-0e43-4bd8-84da-9af07efcf62a">
+    <name>ИспользоватьВнешниеОснованияДляРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать внешние основания для работ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Использовать внешние основания для работ)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9867fe7e-7545-4425-9b74-32a0a68c7c18">
+    <name>ИспользоватьСметыРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать сметы ремонта</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Использовать сметы ремонта)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e5d2e05a-d813-4f8d-b6b8-72a2e0dc3c2e">
+    <name>ИспользоватьРегламентныеМероприятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать регламентные мероприятия</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Использовать регламентные мероприятия)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b2dacada-c24f-4c47-8e50-ee4697f713a8">
+    <name>Направление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направление</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.торо_НаправленияОбъектовРемонтныхРабот</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Направление)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

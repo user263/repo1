@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOptionsParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="45ba24a6-df64-4ff2-b348-b27a6fb36a07">
+  <name>торо_Направление</name>
+  <synonym>
+    <key>ru</key>
+    <value>Направление</value>
+  </synonym>
+  <comment></comment>
+  <use>InformationRegister.торо_ДетальнаяНастройкаВРазрезеНаправлений.Dimension.Направление</use>
+</mdclass:FunctionalOptionsParameter>

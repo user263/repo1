@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0e33e8e4-e85a-4acd-8647-649e2d23133d">
+  <producedTypes>
+    <managerType typeId="5583f70a-15c1-4e62-9794-de56443fe37a" valueTypeId="bbb0b7ea-ba0b-47d2-b3ba-508482631701"/>
+    <valueManagerType typeId="686d2501-db5c-4e18-9d73-6f4cdff77ec1" valueTypeId="04473afa-0b70-4dd3-8172-542d230adec9"/>
+  </producedTypes>
+  <name>торо_АдресСервераСЛК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адрес сервера СЛК</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>100</length>
+    </stringQualifiers>
+  </type>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+</mdclass:Constant>

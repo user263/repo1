@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ef99dd3-d799-4f53-ab56-5528b4c9d782">
+  <name>ФизическиеЛица</name>
+  <synonym>
+    <key>ru</key>
+    <value>Физические лица</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.ВидыДокументовФизическихЛиц</content>
+  <content>Enum.ПолФизическогоЛица</content>
+  <content>InformationRegister.ДокументыФизическихЛиц</content>
+  <content>Role.ДобавлениеИзменениеФизическихЛиц</content>
+  <content>Role.ЧтениеПерсональныхДанныхФизическихЛиц</content>
+  <content>Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц</content>
+  <content>361271fa-2faa-497d-adfe-dea8b825405e</content>
+  <content>Role.ЧтениеФизическихЛиц</content>
+  <content>5dceae8b-1ff3-4760-a1c4-975a92be1023</content>
+  <content>CommonModule.ФизическиеЛицаКлиентСервер</content>
+  <content>CommonTemplate.КомпонентаСклоненияФИО</content>
+  <content>Catalog.ФизическиеЛица</content>
+  <content>Role.ДобавлениеИзменениеДанныхФизическихЛицЗарплатаКадры</content>
+  <parentSubsystem>Subsystem.СтандартныеПодсистемы</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="65299a99-4109-4c58-8c37-efedd09a6938">
+  <producedTypes>
+    <managerType typeId="dd843f99-6d17-4281-801d-035425372dbd" valueTypeId="9450969c-8d0c-4716-99ca-4fb8eef7b208"/>
+    <valueManagerType typeId="447417bd-e25f-4034-b23b-733aed5bb9a4" valueTypeId="9c23636b-d016-42fd-a681-23c1ca5e3bbd"/>
+  </producedTypes>
+  <name>торо_ИспользоватьНаправленияОР</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать направления объектов ремонтов</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

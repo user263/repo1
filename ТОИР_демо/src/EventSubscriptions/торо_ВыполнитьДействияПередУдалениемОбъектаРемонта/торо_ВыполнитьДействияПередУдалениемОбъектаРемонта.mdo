@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="693d0b31-a694-4fea-9215-826c27d6446f">
+  <name>торо_ВыполнитьДействияПередУдалениемОбъектаРемонта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполнить действия перед удалением объекта ремонта</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.торо_ОбъектыРемонта</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.торо_РаботаСИерархией.торо_ВыполнитьДействияПередУдалениемОбъектаРемонтаПередУдалением</handler>
+</mdclass:EventSubscription>

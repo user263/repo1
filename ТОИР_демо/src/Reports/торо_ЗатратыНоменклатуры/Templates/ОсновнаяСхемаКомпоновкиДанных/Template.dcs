@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдиницаИзмерения</dataPath>
+			<field>ЕдиницаИзмерения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Единица измерения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РемонтнаяРабота</dataPath>
+			<field>РемонтнаяРабота</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ремонтная работа</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПлановоеКоличество</dataPath>
+			<field>ПлановоеКоличество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Плановое количество</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=3; ЧН=0</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФактическоеКоличество</dataPath>
+			<field>ФактическоеКоличество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фактическое количество</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=3; ЧН=0</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПлановаяСумма</dataPath>
+			<field>ПлановаяСумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Плановая сумма</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2; ЧН=0; ЧВН=; ЧГ=3,0</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФактическаяСумма</dataPath>
+			<field>ФактическаяСумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фактическая сумма</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2; ЧН=0; ЧВН=; ЧГ=3,0</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СравнениеПланаФакта</dataPath>
+			<field>СравнениеПланаФакта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнение плана факта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СУММА(ЕСТЬNULL(торо_ФактическиеМатериальныеЗатратыРемонтныхРабот.Количество, 0)) КАК ФактическоеКоличество,
+	СУММА(ЕСТЬNULL(торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Количество, 0)) КАК ПлановоеКоличество,
+	ВЫБОР
+		КОГДА торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.РемонтнаяРабота ЕСТЬ NULL 
+			ТОГДА торо_ФактическиеМатериальныеЗатратыРемонтныхРабот.РемонтнаяРабота
+		ИНАЧЕ торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.РемонтнаяРабота
+	КОНЕЦ КАК РемонтнаяРабота,
+	ВЫБОР
+		КОГДА торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Номенклатура ЕСТЬ NULL 
+			ТОГДА торо_ФактическиеМатериальныеЗатратыРемонтныхРабот.Номенклатура
+		ИНАЧЕ торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Номенклатура
+	КОНЕЦ КАК Номенклатура,
+	(ВЫБОР
+		КОГДА торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Номенклатура ЕСТЬ NULL 
+			ТОГДА торо_ФактическиеМатериальныеЗатратыРемонтныхРабот.Номенклатура
+		ИНАЧЕ торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Номенклатура
+	КОНЕЦ).ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	ВЫБОР
+		КОГДА торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Период ЕСТЬ NULL 
+			ТОГДА ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+		ИНАЧЕ торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Период
+	КОНЕЦ КАК ПлановаяДата,
+	ВЫБОР
+		КОГДА торо_ФактическиеМатериальныеЗатратыРемонтныхРабот.Период ЕСТЬ NULL 
+			ТОГДА ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+		ИНАЧЕ торо_ФактическиеМатериальныеЗатратыРемонтныхРабот.Период
+	КОНЕЦ КАК ФактическаяДата
+ПОМЕСТИТЬ ЗатратыНоменклатурыПланФактКоличество
+ИЗ
+	РегистрНакопления.торо_ПлановыеМатериальныеЗатратыРемонтныхРабот КАК торо_ПлановыеМатериальныеЗатратыРемонтныхРабот
+		ПОЛНОЕ СОЕДИНЕНИЕ РегистрНакопления.торо_ФактическиеМатериальныеЗатратыРемонтныхРабот КАК торо_ФактическиеМатериальныеЗатратыРемонтныхРабот
+		ПО торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.ID = торо_ФактическиеМатериальныеЗатратыРемонтныхРабот.ID
+			И торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Номенклатура = торо_ФактическиеМатериальныеЗатратыРемонтныхРабот.Номенклатура
+			И торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.РемонтыОборудования_ID = торо_ФактическиеМатериальныеЗатратыРемонтныхРабот.РемонтыОборудования_ID
+ГДЕ
+	(торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Регистратор = &amp;ЗаявкаНаРемонт
+			ИЛИ &amp;ЗаявкаНаРемонт = ЗНАЧЕНИЕ(Документ.торо_ЗаявкаНаРемонт.ПустаяСсылка))
+	И (торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Период ЕСТЬ NULL 
+			ИЛИ торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода)
+	И (торо_ФактическиеМатериальныеЗатратыРемонтныхРабот.Период ЕСТЬ NULL 
+			ИЛИ торо_ФактическиеМатериальныеЗатратыРемонтныхРабот.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода)
+
+СГРУППИРОВАТЬ ПО
+	ВЫБОР
+		КОГДА торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Номенклатура ЕСТЬ NULL 
+			ТОГДА торо_ФактическиеМатериальныеЗатратыРемонтныхРабот.Номенклатура
+		ИНАЧЕ торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Номенклатура
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.РемонтнаяРабота ЕСТЬ NULL 
+			ТОГДА торо_ФактическиеМатериальныеЗатратыРемонтныхРабот.РемонтнаяРабота
+		ИНАЧЕ торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.РемонтнаяРабота
+	КОНЕЦ,
+	(ВЫБОР
+		КОГДА торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Номенклатура ЕСТЬ NULL 
+			ТОГДА торо_ФактическиеМатериальныеЗатратыРемонтныхРабот.Номенклатура
+		ИНАЧЕ торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Номенклатура
+	КОНЕЦ).ЕдиницаИзмерения,
+	торо_ПлановыеМатериальныеЗатратыРемонтныхРабот.Период,
+	торо_ФактическиеМатериальныеЗатратыРемонтныхРабот.Период
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЗатратыНоменклатурыПланФактКоличество.ПлановаяДата,
+	ЗатратыНоменклатурыПланФактКоличество.ФактическаяДата,
+	МАКСИМУМ(ВЫБОР
+			КОГДА ЦеныНоменклатуры.Период ЕСТЬ NULL 
+				ТОГДА ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+			ИНАЧЕ ЦеныНоменклатуры.Период
+		КОНЕЦ) КАК ПлановаяДатаРегистр,
+	МАКСИМУМ(ВЫБОР
+			КОГДА ЦеныНоменклатуры1.Период ЕСТЬ NULL 
+				ТОГДА ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+			ИНАЧЕ ЦеныНоменклатуры1.Период
+		КОНЕЦ) КАК ФактическаяДатаРегистр,
+	Константы.торо_ТипЦеныДляРасчетаСебестоимостиРемонта КАК ТипЦены,
+	ЗатратыНоменклатурыПланФактКоличество.Номенклатура,
+	ЗатратыНоменклатурыПланФактКоличество.ЕдиницаИзмерения
+ПОМЕСТИТЬ ПериодПланФактРегистр
+ИЗ
+	ЗатратыНоменклатурыПланФактКоличество КАК ЗатратыНоменклатурыПланФактКоличество
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры КАК ЦеныНоменклатуры
+		ПО ЗатратыНоменклатурыПланФактКоличество.Номенклатура = ЦеныНоменклатуры.Номенклатура
+			И ЗатратыНоменклатурыПланФактКоличество.ПлановаяДата &gt;= ЦеныНоменклатуры.Период
+			И ЗатратыНоменклатурыПланФактКоличество.ЕдиницаИзмерения = ЦеныНоменклатуры.ЕдиницаИзмерения
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры КАК ЦеныНоменклатуры1
+		ПО ЗатратыНоменклатурыПланФактКоличество.Номенклатура = ЦеныНоменклатуры1.Номенклатура
+			И ЗатратыНоменклатурыПланФактКоличество.ФактическаяДата &gt;= ЦеныНоменклатуры1.Период
+			И ЗатратыНоменклатурыПланФактКоличество.ЕдиницаИзмерения = ЦеныНоменклатуры1.ЕдиницаИзмерения
+		ЛЕВОЕ СОЕДИНЕНИЕ Константы КАК Константы
+		ПО (ИСТИНА)
+
+СГРУППИРОВАТЬ ПО
+	ЗатратыНоменклатурыПланФактКоличество.ПлановаяДата,
+	ЗатратыНоменклатурыПланФактКоличество.ФактическаяДата,
+	Константы.торо_ТипЦеныДляРасчетаСебестоимостиРемонта,
+	ЗатратыНоменклатурыПланФактКоличество.Номенклатура,
+	ЗатратыНоменклатурыПланФактКоличество.ЕдиницаИзмерения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЕСТЬNULL(ЦеныНоменклатуры1.Цена, 0) КАК ФактическаяЦена,
+	ЕСТЬNULL(ЦеныНоменклатуры.Цена, 0) КАК ПлановаяЦена,
+	ПериодПланФактРегистр.Номенклатура,
+	ПериодПланФактРегистр.ЕдиницаИзмерения,
+	ПериодПланФактРегистр.ПлановаяДата,
+	ПериодПланФактРегистр.ФактическаяДата,
+	ПериодПланФактРегистр.ПлановаяДатаРегистр,
+	ПериодПланФактРегистр.ФактическаяДатаРегистр
+ПОМЕСТИТЬ ПланФактЦена
+ИЗ
+	ПериодПланФактРегистр КАК ПериодПланФактРегистр
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры КАК ЦеныНоменклатуры
+		ПО ПериодПланФактРегистр.ПлановаяДатаРегистр = ЦеныНоменклатуры.Период
+			И ПериодПланФактРегистр.Номенклатура = ЦеныНоменклатуры.Номенклатура
+			И ПериодПланФактРегистр.ТипЦены = ЦеныНоменклатуры.ВидЦены
+			И ПериодПланФактРегистр.ЕдиницаИзмерения = ЦеныНоменклатуры.ЕдиницаИзмерения
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры КАК ЦеныНоменклатуры1
+		ПО ПериодПланФактРегистр.ФактическаяДатаРегистр = ЦеныНоменклатуры1.Период
+			И ПериодПланФактРегистр.Номенклатура = ЦеныНоменклатуры1.Номенклатура
+			И ПериодПланФактРегистр.ТипЦены = ЦеныНоменклатуры1.ВидЦены
+			И ПериодПланФактРегистр.ЕдиницаИзмерения = ЦеныНоменклатуры1.ЕдиницаИзмерения
+
+СГРУППИРОВАТЬ ПО
+	ПериодПланФактРегистр.Номенклатура,
+	ПериодПланФактРегистр.ЕдиницаИзмерения,
+	ПериодПланФактРегистр.ПлановаяДата,
+	ПериодПланФактРегистр.ФактическаяДата,
+	ПериодПланФактРегистр.ПлановаяДатаРегистр,
+	ПериодПланФактРегистр.ФактическаяДатаРегистр,
+	ЕСТЬNULL(ЦеныНоменклатуры1.Цена, 0),
+	ЕСТЬNULL(ЦеныНоменклатуры.Цена, 0)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЗатратыНоменклатурыПланФактКоличество.РемонтнаяРабота,
+	ЗатратыНоменклатурыПланФактКоличество.Номенклатура,
+	ЗатратыНоменклатурыПланФактКоличество.ЕдиницаИзмерения,
+	СУММА(ЗатратыНоменклатурыПланФактКоличество.ФактическоеКоличество) КАК ФактическоеКоличество,
+	СУММА(ЗатратыНоменклатурыПланФактКоличество.ПлановоеКоличество) КАК ПлановоеКоличество,
+	СУММА(ЕСТЬNULL(ЗатратыНоменклатурыПланФактКоличество.ПлановоеКоличество * ПланФактЦена.ПлановаяЦена, 0)) КАК ПлановаяСумма,
+	СУММА(ЕСТЬNULL(ЗатратыНоменклатурыПланФактКоличество.ФактическоеКоличество * ПланФактЦена.ФактическаяЦена, 0)) КАК ФактическаяСумма,
+	СУММА(ЕСТЬNULL(ЗатратыНоменклатурыПланФактКоличество.ФактическоеКоличество * ПланФактЦена.ФактическаяЦена, 0) - ЕСТЬNULL(ЗатратыНоменклатурыПланФактКоличество.ПлановоеКоличество * ПланФактЦена.ПлановаяЦена, 0)) КАК СравнениеПланаФакта
+ИЗ
+	ЗатратыНоменклатурыПланФактКоличество КАК ЗатратыНоменклатурыПланФактКоличество
+		ЛЕВОЕ СОЕДИНЕНИЕ ПланФактЦена КАК ПланФактЦена
+		ПО ЗатратыНоменклатурыПланФактКоличество.Номенклатура = ПланФактЦена.Номенклатура
+			И ЗатратыНоменклатурыПланФактКоличество.ЕдиницаИзмерения = ПланФактЦена.ЕдиницаИзмерения
+			И ЗатратыНоменклатурыПланФактКоличество.ФактическаяДата = ПланФактЦена.ФактическаяДата
+			И ЗатратыНоменклатурыПланФактКоличество.ПлановаяДата = ПланФактЦена.ПлановаяДата
+
+СГРУППИРОВАТЬ ПО
+	ЗатратыНоменклатурыПланФактКоличество.РемонтнаяРабота,
+	ЗатратыНоменклатурыПланФактКоличество.Номенклатура,
+	ЗатратыНоменклатурыПланФактКоличество.ЕдиницаИзмерения</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ОтклонениеКоличество</dataPath>
+		<expression>ПлановоеКоличество - ФактическоеКоличество</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отклонение количество</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧДЦ=3; ЧН=0; ЧВН=; ЧГ=3,0</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ОтклонениеСумма</dataPath>
+		<expression>ФактическаяСумма - ПлановаяСумма</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отклонение сумма</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧДЦ=2; ЧН=0; ЧВН=; ЧГ=3,0</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<totalField>
+		<dataPath>ПлановоеКоличество</dataPath>
+		<expression>Сумма(ПлановоеКоличество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ФактическоеКоличество</dataPath>
+		<expression>Сумма(ФактическоеКоличество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПлановаяСумма</dataPath>
+		<expression>Сумма(ПлановаяСумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ФактическаяСумма</dataPath>
+		<expression>Сумма(ФактическаяСумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СравнениеПланаФакта</dataPath>
+		<expression>Сумма(СравнениеПланаФакта)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтклонениеКоличество</dataPath>
+		<expression>Сумма(ОтклонениеКоличество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтклонениеСумма</dataPath>
+		<expression>Сумма(ОтклонениеСумма)</expression>
+	</totalField>
+	<parameter>
+		<name>ЗаявкаНаРемонт</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Заявка на ремонт</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.торо_ЗаявкаНаРемонт</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Документ.торо_ЗаявкаНаРемонт.ПустаяСсылка</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;период.ДатаОкончания</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">ThisYear</v8:variant>
+		</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Затраты номенклатуры: таблица</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕдиницаИзмерения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПлановоеКоличество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПлановаяСумма</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ФактическоеКоличество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ФактическаяСумма</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтклонениеКоличество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтклонениеСумма</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ЗаявкаНаРемонт</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Документ.торо_ЗаявкаНаРемонт.ПустаяСсылка</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>b95415fb-2699-4112-91fa-002d76910d21</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisMonth</v8:variant>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextMonth</v8:variant>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisYear</v8:variant>
+					</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>75e0f7e2-f631-4912-9c16-09a127ada794</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период отчета</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Затраты номенклатуры</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>РемонтнаяРабота</dcsset:field>
+						<dcsset:groupType>Hierarchy</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Номенклатура</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ЕдиницаИзмерения</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>Диаграмма</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Затраты номенклатуры: диаграмма</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕдиницаИзмерения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПлановоеКоличество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПлановаяСумма</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ФактическоеКоличество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ФактическаяСумма</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтклонениеКоличество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтклонениеСумма</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ЗаявкаНаРемонт</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Документ.торо_ЗаявкаНаРемонт.ПустаяСсылка</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>b95415fb-2699-4112-91fa-002d76910d21</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisMonth</v8:variant>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextMonth</v8:variant>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisYear</v8:variant>
+					</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>75e0f7e2-f631-4912-9c16-09a127ada794</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период отчета</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Затраты номенклатуры</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemChart">
+				<dcsset:point>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Номенклатура</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:point>
+				<dcsset:point>
+					<dcsset:use>false</dcsset:use>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>РемонтнаяРабота</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:point>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СравнениеПланаФакта</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>Номенклатура</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>РемонтнаяРабота</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter/>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветВДиаграмме</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#00FFFF</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
+								<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+								<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:ChartType">Column3D</dcscor:value>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ТипДиаграммы.БазовоеЗначение</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ТипДиаграммы.ПропускатьБазовоеЗначение</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ТипДиаграммы.Окантовка</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ТипДиаграммы.Градиент</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ТипДиаграммы.РасположениеЛегенды</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionChartLegendPlacement">None</dcscor:value>
+						</dcscor:item>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

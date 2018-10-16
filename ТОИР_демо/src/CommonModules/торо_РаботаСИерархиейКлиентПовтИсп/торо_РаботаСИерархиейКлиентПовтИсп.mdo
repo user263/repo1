@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c8296ce-11d5-4df8-8688-4f72de2ea835">
+  <name>торо_РаботаСИерархиейКлиентПовтИсп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с иерархией (клиент, повторное использование)</value>
+  </synonym>
+  <comment></comment>
+  <clientManagedApplication>true</clientManagedApplication>
+  <returnValuesReuse>DuringSession</returnValuesReuse>
+</mdclass:CommonModule>

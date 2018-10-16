@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="81d83890-77c8-4ee4-8c61-59a40da0e849">
+  <name>удалить_торо_КомпонентаСЛК_2_0_Session</name>
+  <synonym>
+    <key>ru</key>
+    <value>Компонента СЛК 2 0 (session)</value>
+  </synonym>
+  <comment></comment>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b83e8798-284e-4f81-8f2c-747f0b9db385">
+  <name>Обмен_mobile_Регистрация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен ТОиР 2.0 ERP 2.0 зарегистрировать изменение</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.торо_ТиповыеОР</types>
+    <types>ChartOfCharacteristicTypesObject.торо_ИзмеряемыеПоказателиОбъектовРемонта</types>
+    <types>CatalogObject.торо_ПричиныДефектов</types>
+    <types>CatalogObject.ПараметрыВыработкиОС</types>
+    <types>CatalogObject.торо_НаправленияОбъектовРемонтныхРабот</types>
+    <types>CatalogObject.торо_УсловияВыявленияДефекта</types>
+    <types>CatalogObject.торо_ОбъектыРемонта</types>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.торо_КритичностьДефекта</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.ЕдиницыИзмерения</types>
+    <types>CatalogObject.СтруктураПредприятия</types>
+    <types>CatalogObject.торо_ПричиныПростояОборудования</types>
+    <types>CatalogObject.торо_ТиповыеДефектыОборудования</types>
+    <types>CatalogObject.торо_ВидыДефектов</types>
+    <types>CatalogObject.торо_ВидыЭксплуатации</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.Обмен_mobile_События.Обмен_mobile_ЗарегистрироватьИзменениеПередЗаписью</handler>
+</mdclass:EventSubscription>

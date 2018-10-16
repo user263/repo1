@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eb382e61-4b2d-4652-ba62-5a1a01207cf8">
+  <name>ОбменТОиР20УПП_ЗарегистрироватьИзменение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен ТОиР 2.0 УПП 1.3 зарегистрировать изменение</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.Номенклатура</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменТОиР20УППСобытия.ОбменТОиР20УПП_ЗарегистрироватьИзменениеПередЗаписью</handler>
+</mdclass:EventSubscription>

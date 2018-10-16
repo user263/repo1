@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ceabe52d-9b20-4553-9d85-9dcfa538338b">
+  <name>торо_РаботаСИерархией</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с иерархией</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

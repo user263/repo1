@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60dee54e-49a2-402b-a1c2-3ec5bb03ed58">
+  <producedTypes>
+    <objectType typeId="b4662dce-42a8-4418-84cd-3419e176168c" valueTypeId="ea6e4bcd-f7f9-4f05-877f-c14bdff68f87"/>
+    <managerType typeId="cebe7687-ede5-4212-b500-8789f23a27b3" valueTypeId="60c537de-850f-4466-94e6-41f73131289a"/>
+  </producedTypes>
+  <name>ДвиженияДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения документа</value>
+  </synonym>
+  <comment>Отчет по движениям документа</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДвиженияДокумента.Form.ФормаОтчета</defaultForm>
+  <defaultSettingsForm>CommonForm.ВспомогательнаяФормаНастроекОтчета</defaultSettingsForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="d6cd8f1d-bd15-4731-b36a-5f4c05676e41">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ, для которого формируется отчет.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="abb363ae-37f6-4220-a1c4-80bfaf9ee99a">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="091873d7-1006-4cd8-a81b-5659cc87c378">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <commands uuid="9c883d4a-7142-4861-8547-cde4c09b9754">
+    <name>ДвиженияДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Движения документа</value>
+    </synonym>
+    <comment>Отчет по движениям документа</comment>
+    <group>CommandGroup.торо_Перейти</group>
+    <commandParameterType>
+      <types>DocumentRef.ВнутреннееПотреблениеТоваров</types>
+      <types>DocumentRef.торо_УстановкаЛимитаНаПлановыеРемонтныеРаботы</types>
+      <types>DocumentRef.торо_ВнешнееОснованиеДляРабот</types>
+      <types>DocumentRef.торо_ИзменениеСоставаРемонтнойБригады</types>
+      <types>DocumentRef.торо_УчетКонтролируемыхПоказателей</types>
+      <types>DocumentRef.торо_УстановкаКоэффициентовРемонтныхОсобенностей</types>
+      <types>DocumentRef.торо_ЗакрытиеЗаявокИРемонтов</types>
+      <types>DocumentRef.торо_НарядНаРегламентноеМероприятие</types>
+      <types>DocumentRef.торо_УстановкаАналоговНоменклатурыДляРемонтов</types>
+      <types>DocumentRef.торо_НастройкаРегистрацииНаработкиЗависимыхОР</types>
+      <types>DocumentRef.ПеремещениеТоваров</types>
+      <types>DocumentRef.торо_ПланГрафикРемонта</types>
+      <types>DocumentRef.торо_ИзменениеПоложенияВСтруктуреИерархии</types>
+      <types>DocumentRef.торо_НарядНаВыполнениеРемонтныхРабот</types>
+      <types>DocumentRef.торо_ГрафикРегламентныхМероприятийТОиР</types>
+      <types>DocumentRef.торо_ПринятиеОРКУчету</types>
+      <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+      <types>DocumentRef.торо_УстановкаЦелевыхЗначенийПоказателейKPI</types>
+      <types>DocumentRef.торо_КомиссионноеРассмотрение</types>
+      <types>DocumentRef.КадровыйПеревод</types>
+      <types>DocumentRef.торо_РегистрацияЗначенийВнешнихПоказателейKPI</types>
+      <types>DocumentRef.СписаниеНедостачТоваров</types>
+      <types>DocumentRef.торо_АктОВыполненииРегламентногоМероприятия</types>
+      <types>DocumentRef.торо_ОстановочныеРемонты</types>
+      <types>DocumentRef.торо_ВыявленныеДефекты</types>
+      <types>DocumentRef.торо_ВыбытиеОбъектаРемонта</types>
+      <types>DocumentRef.торо_АктОВыполненииЭтапаРабот</types>
+      <types>DocumentRef.торо_ОценкаРаботыПодрядчика</types>
+      <types>DocumentRef.торо_УстановкаСтоимостейКвалификаций</types>
+      <types>DocumentRef.торо_УчетНаработкиОборудования</types>
+      <types>DocumentRef.Увольнение</types>
+      <types>DocumentRef.ОприходованиеИзлишковТоваров</types>
+      <types>DocumentRef.торо_ВводНачальныхДанных</types>
+      <types>DocumentRef.торо_ПрисвоениеКвалификацийСотрудникам</types>
+      <types>DocumentRef.торо_СостоянияОбъектовРемонта</types>
+      <types>DocumentRef.торо_УстановкаПроизвольногоЗначенияНаработки</types>
+      <types>DocumentRef.торо_УстановкаМинимальногоОстаткаНоменклатуры</types>
+      <types>DocumentRef.ПриемНаРаботу</types>
+      <types>DocumentRef.ЗаказНаВнутреннееПотребление</types>
+      <types>DocumentRef.торо_УстановкаКоэффициентовПереводаСтоимостейРемонтов</types>
+      <types>DocumentRef.УстановкаЦенНоменклатуры</types>
+      <types>DocumentRef.торо_ЗаявкаНаРемонт</types>
+      <types>DocumentRef.торо_АктПриемкиОборудования</types>
+    </commandParameterType>
+    <representation>Picture</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Report>

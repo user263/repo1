@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23ca9dd7-61c5-4e32-9e9c-09a6b2beb9d1">
+  <producedTypes>
+    <managerType typeId="ba796c8e-da32-45fa-b528-de6427f070cf" valueTypeId="d39390ba-27e2-4aa2-9e39-59d3043096b4"/>
+    <valueManagerType typeId="31ba9d79-5511-4e99-847e-3ef59554ff2f" valueTypeId="fc6f08f2-0522-42ea-9f17-a8994bf5024f"/>
+  </producedTypes>
+  <name>торо_ИспользоватьГарантии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать гарантии</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

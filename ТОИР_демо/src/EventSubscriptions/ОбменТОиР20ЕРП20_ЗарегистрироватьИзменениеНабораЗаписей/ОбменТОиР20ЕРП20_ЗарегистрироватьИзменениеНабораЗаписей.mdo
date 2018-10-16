@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e703d19-6bd1-47d0-bae1-039cb7b47b78">
+  <name>ОбменТОиР20ЕРП20_ЗарегистрироватьИзменениеНабораЗаписей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен ТОиР 2.0 ERP 2.0 зарегистрировать изменение</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>InformationRegisterRecordSet.торо_ЗаказыНаРемонтВЕРП</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменТОиР20ЕРП20События.ОбменТОиР20ЕРП20_ЗарегистрироватьИзменениеНабораЗаписейПередЗаписью</handler>
+</mdclass:EventSubscription>

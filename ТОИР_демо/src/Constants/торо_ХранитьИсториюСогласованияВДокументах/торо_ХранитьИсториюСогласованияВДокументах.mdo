@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5db7e52c-9721-4cb0-af75-4d03430f163e">
+  <producedTypes>
+    <managerType typeId="4296d30a-bb04-428f-9d57-5b34733e17bc" valueTypeId="5257bf51-4cd9-4f82-8cbd-38035de4198a"/>
+    <valueManagerType typeId="27c91430-0a48-4130-b5a1-cc7eddb18286" valueTypeId="5d7a46f5-69be-49a4-a589-fff373393f9f"/>
+  </producedTypes>
+  <name>торо_ХранитьИсториюСогласованияВДокументах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хранить историю согласования в документах</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <explanation>
+    <key>ru</key>
+    <value>Требует перезаписи документа при изменении статуса согласования документа. Начиная с версии ТОиР 2.0.5.1 история согласования хранится отдельно от документов и изменение статуса не требует перезаписи документа.</value>
+  </explanation>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+</mdclass:Constant>

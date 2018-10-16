@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0a136ad9-22ad-4ba7-a31a-40a193b49d26">
+  <producedTypes>
+    <objectType typeId="c14b9953-50dd-41b4-9945-c3d82b9def08" valueTypeId="c3cbb7b3-cc9c-4d0f-854f-a1d946b94eca"/>
+    <refType typeId="7a576bbd-3683-4c69-8259-b03d2c59db04" valueTypeId="a925ac82-b64b-4620-b2c9-6f589a620862"/>
+    <selectionType typeId="3e8eddeb-5824-4a8b-b820-69a6af0b468c" valueTypeId="fab83796-93f1-4981-a423-05ce020cf915"/>
+    <listType typeId="25255fe2-fa22-4dc1-a286-499261db7293" valueTypeId="b90e814f-d23f-4569-a17f-2cafcd67ee68"/>
+    <managerType typeId="efec1d42-5713-4699-ab3f-8e11f28ce037" valueTypeId="88f943fb-686a-4466-ab97-661cf01efc27"/>
+  </producedTypes>
+  <name>НаборыДополнительныхРеквизитовИСведений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Наборы дополнительных реквизитов и сведений</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.НаборыДополнительныхРеквизитовИСведений.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входит в группу</value>
+    </synonym>
+    <comment></comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа, к которой относится набор.</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <comment></comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование набора свойств</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Набор дополнительных реквизитов и сведений</value>
+  </objectPresentation>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="425bdc82-6259-40fb-a96a-cd18b8e52c1c">
+      <name>Справочник_торо_НаправленияОбъектовРемонтныхРабот</name>
+      <description>Доп. свойства справочника &quot;Направления объектов ремонтных работ&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="a1a12e85-567c-4a39-bd62-8961bd2dd48a">
+        <name>Справочник_торо_НаправленияОбъектовРемонтныхРабот_Общие</name>
+        <description>Справочник &quot;Направления объектов ремонтных работ&quot; (Общие)</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+    </items>
+    <items id="f7de20f9-22d2-4d4a-b0e6-b709a4079c91">
+      <name>Справочник_торо_ОбъектыРемонта</name>
+      <description>Доп. свойства справочника &quot;Объекты ремонта&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="eca79be8-708d-45bd-a25b-e4cc88b8bc09">
+        <name>Справочник_торо_ОбъектыРемонта_общие</name>
+        <description>Справочник &quot;Объекты ремонта&quot; (Общие)</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+    </items>
+    <items id="ec0be931-2037-4809-8cbe-b1c03721b327">
+      <name>Справочник_торо_ТиповыеОР</name>
+      <description>Доп. свойства справочника &quot;Типовые объекты ремонта&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="eae6431b-7f25-4cc0-ac2f-39f8b7509c52">
+        <name>Справочник_торо_ТиповыеОР_Общие</name>
+        <description>Справочник &quot;Типовые объекты ремонта&quot; общие</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+    </items>
+    <items id="e7f63740-d60a-4897-b3a2-f29d5c535b27">
+      <name>Справочник_Номенклатура</name>
+      <description>Справочник &quot;Номенклатура&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="3d8116af-955a-4cf3-ad37-4d45fdc9f083">
+        <name>Справочник_Номенклатура_Общие</name>
+        <description>Справочник &quot;Номенклатура&quot; (Общие)</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+    </items>
+    <items id="da28620d-df32-4014-b5aa-f2ce91e10bf7">
+      <name>Справочник_Партнеры</name>
+      <description>Справочник &quot;Партнеры&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="11299b4a-07eb-4711-ac20-932da703836f">
+        <name>Справочник_Партнеры_Клиенты</name>
+        <description>Клиенты</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="87a63bc4-c560-477f-bedb-39f922110c05">
+        <name>Справочник_Партнеры_Общие</name>
+        <description>Общие</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="d757cf91-7ab8-4716-8ec0-88817bb743a8">
+        <name>Справочник_Партнеры_Поставщики</name>
+        <description>Поставщики</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="f1c93941-5531-478b-bd6a-3873be534abc">
+        <name>Справочник_Партнеры_Прочие</name>
+        <description>Прочие</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+    </items>
+    <items id="3dfc5119-ba26-4331-9595-a819c5e19cb2">
+      <name>Справочник_ХарактеристикиНоменклатуры</name>
+      <description>Справочник &quot;Характеристики номенклатуры&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="af58bf33-9d95-4672-938d-49ddfde0f516">
+        <name>Справочник_ХарактеристикиНоменклатуры_Общие</name>
+        <description>Справочник &quot;Характеристики номенклатуры&quot; (Общие)</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+    </items>
+    <items id="eeaea31c-d100-438b-8315-bd801571fb84">
+      <name>Справочник_ВнешниеПользователи</name>
+      <description>Внешние пользователи</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="0e0c3572-3239-43ce-be5a-ddf372b71a19">
+      <name>Документ_торо_АктОВыполненииРегламентногоМероприятия</name>
+      <description>Документ &quot;Акт о выполнении регламентного мероприятия&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="63477dbe-3790-44ca-b873-3c8fa4f82cb7">
+      <name>Документ_торо_АктОВыполненииЭтапаРабот</name>
+      <description>Документ &quot;Акт о выполнении этапа работ&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="e50c3f8e-bdff-4033-91ed-4cd3b2d623af">
+      <name>Документ_торо_АктПриемкиОборудования</name>
+      <description>Документ &quot;Акт приемки оборудования&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="c9d39561-5294-4938-8e13-7e6e1e59a5ab">
+      <name>Документ_торо_ВводНачальныхДанных</name>
+      <description>Документ &quot;Ввод начальных данных&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="559e95c7-de6f-4da2-9f58-d6fee1b4a38a">
+      <name>Документ_торо_ВнешнееОснованиеДляРабот</name>
+      <description>Документ &quot;Внешнее основание для работ&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="a14fdd3c-a751-4197-a4d3-67f1cdc7fd05">
+      <name>Документ_ВнутреннееПотреблениеТоваров</name>
+      <description>Документ &quot;Внутреннее потребление товаров&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="04acc19d-5c72-4bb4-b049-62007185085f">
+      <name>Документ_торо_ВыбытиеОбъектаРемонта</name>
+      <description>Документ &quot;Выбытие объекта ремонта&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="73255c2b-f643-4d29-86e0-018747ae44d1">
+      <name>Документ_торо_ВыявленныеДефекты</name>
+      <description>Документ &quot;Выявленные дефекты&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="cc94a448-cbfe-4aba-a03a-027a699f5491">
+      <name>Документ_торо_ГрафикРегламентныхМероприятийТОиР</name>
+      <description>Документ &quot;График регламентных мероприятий ТОиР&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="24b6a0f5-1edd-47c6-b4e5-5612da220a91">
+      <name>Документ_ЗаказНаВнутреннееПотребление</name>
+      <description>Документ &quot;Заказ на внутреннее потребление&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="dae4069a-86cc-4ed5-b36d-b31c13c3c374">
+      <name>Документ_торо_ЗакрытиеЗаявокИРемонтов</name>
+      <description>Документ &quot;Закрытие заявок и ремонтов&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="597eff31-7dc3-4389-875b-c4ae8d81cfa8">
+      <name>Документ_торо_КомиссионноеРассмотрение</name>
+      <description>Документ &quot;Закупки (Лоты)&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="d651317f-98e6-4ec9-8617-94319c8a12f8">
+      <name>Документ_торо_ЗаявкаНаРемонт</name>
+      <description>Документ &quot;Заявка на ремонт&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="0ed356f9-5ffc-482e-90fc-e7647fe71a59">
+      <name>Документ_торо_ИзменениеПоложенияВСтруктуреИерархии</name>
+      <description>Документ &quot;Изменение положения в структуре иерархии&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="f6a0996f-ad10-465a-ad8f-923d241dbccb">
+      <name>Документ_торо_ИзменениеСоставаРемонтнойБригады</name>
+      <description>Документ &quot;Изменение состава ремонтной бригады&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="559d181a-c0f8-4033-8d98-0c51212b8384">
+      <name>Документ_КадровыйПеревод</name>
+      <description>Документ &quot;Кадровый перевод&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="249275da-8184-4639-bc24-8f772022655a">
+      <name>Документ_торо_НарядНаВыполнениеРемонтныхРабот</name>
+      <description>Документ &quot;Наряд на выполнение ремонтных работ&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="836aa8e0-214f-4bb4-8551-77a4bf748a08">
+      <name>Документ_торо_НарядНаРегламентноеМероприятие</name>
+      <description>Документ &quot;Наряд на регламентное мероприятие&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="6e9e1811-2052-4474-bf03-ca5058834e0e">
+      <name>Документ_торо_НастройкаРегистрацииНаработкиЗависимыхОР</name>
+      <description>Документ &quot;Настройка регистрации наработки зависимых ОР&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="8ba6b002-de47-489b-aa26-70ba8309e995">
+      <name>Документ_ОприходованиеИзлишковТоваров</name>
+      <description>Документ &quot;Оприходование излишков товаров&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="98994e3d-39b5-427b-a39b-fbba2d5f5188">
+      <name>Документ_торо_ОстановочныеРемонты</name>
+      <description>Документ &quot;Остановочные ремонты&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="a115bbc3-4050-48a7-920c-4086a5c4ae60">
+      <name>Документ_торо_ОценкаРаботыПодрядчика</name>
+      <description>Документ &quot;Оценка работы подрядчика&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="0539ce31-d926-4016-82ee-a7bd8a6dc1db">
+      <name>Документ_ПеремещениеТоваров</name>
+      <description>Документ &quot;Перемещение товаров&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="3dbe910c-b501-4743-8c99-4322116e0d49">
+      <name>Документ_торо_ПланГрафикРемонта</name>
+      <description>Документ &quot;План график ремонта&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="47510726-bf9a-4d46-b326-8db6308b53e0">
+      <name>Документ_ПоступлениеТоваровУслуг</name>
+      <description>Документ &quot;Поступление товаров и услуг&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="f3ab3a3c-0393-463e-ac2d-f00de82ef4af">
+      <name>Документ_ПриемНаРаботу</name>
+      <description>Документ &quot;Прием на работу&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="7ef66840-8a06-4bfe-89de-c560bc19a2a4">
+      <name>Документ_торо_ПринятиеОРКУчету</name>
+      <description>Документ &quot;Принятие объекта ремонта к учету&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="7aa64c43-62b8-449e-a4e5-86ee16562869">
+      <name>Документ_торо_ПрисвоениеКвалификацийСотрудникам</name>
+      <description>Документ &quot;Присвоение квалификаций сотрудникам&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="aeb95a9d-dc26-4d7f-9265-e094f3c99af7">
+      <name>Документ_торо_РегистрацияЗначенийВнешнихПоказателейKPI</name>
+      <description>Документ &quot;Регистрация значений внешних показателей&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="b92baef3-b218-481b-acae-3c1f86047b2e">
+      <name>Документ_торо_СостоянияОбъектовРемонта</name>
+      <description>Документ &quot;Состояния объектов ремонта&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="839d28bf-6a3a-4900-951b-2bfe2b830ae8">
+      <name>Документ_СписаниеНедостачТоваров</name>
+      <description>Документ &quot;Списание недостач товаров&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="00cb0b76-e75a-4a53-b7f0-41b2601441d5">
+      <name>Документ_Увольнение</name>
+      <description>Документ &quot;Увольнение&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="c0520e9e-ec3b-4a19-999a-9e0ed78751b3">
+      <name>Документ_торо_УстановкаАналоговНоменклатурыДляРемонтов</name>
+      <description>Документ &quot;Установка аналогов номенклатуры для ремонтов&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="7dddadd1-84d2-4bf7-9b9a-92308462232f">
+      <name>Документ_торо_УстановкаКоэффициентовПереводаСтоимостейРемонтов</name>
+      <description>Документ &quot;Установка коэффициентов перевода стоимостей ремонтов&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="e9cb6e49-99be-4079-8182-94f1a3548e38">
+      <name>Документ_торо_УстановкаКоэффициентовРемонтныхОсобенностей</name>
+      <description>Документ &quot;Установка коэффициентов ремонтных особенностей&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="ce7a9084-60ad-4ba1-88d5-fdcda5bc56a0">
+      <name>Документ_торо_УстановкаЛимитаНаПлановыеРемонтныеРаботы</name>
+      <description>Документ &quot;Установка лимита на плановые ремонтные работы&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="4928810d-a661-4d8a-90da-5682a69fd94b">
+      <name>Документ_торо_УстановкаМинимальногоОстаткаНоменклатуры</name>
+      <description>Документ &quot;Установка минимального остатка номенклатуры&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="6a931c29-590b-4c75-bc97-23d57a375dfc">
+      <name>Документ_торо_УстановкаПроизвольногоЗначенияНаработки</name>
+      <description>Документ &quot;Установка произвольного значения наработки&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="8df835d1-c4c2-4396-b155-4374295638f1">
+      <name>Документ_торо_УстановкаСтоимостейКвалификаций</name>
+      <description>Документ &quot;Установка стоимостей квалификаций&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="7066e3e4-ec82-48b6-af94-402fab9eb06b">
+      <name>Документ_торо_УстановкаЦелевыхЗначенийПоказателейKPI</name>
+      <description>Документ &quot;Установка целевых значений показателей (KPI)&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="e53c6af9-7208-4c2c-9885-90ade62cb857">
+      <name>Документ_УстановкаЦенНоменклатуры</name>
+      <description>Документ &quot;Установка цен номенклатуры&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="0c9c829d-d11d-4f4d-b6bc-7fd91b0a7198">
+      <name>Документ_торо_УчетКонтролируемыхПоказателей</name>
+      <description>Документ &quot;Учет контролируемых показателей&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="11bfd743-d61e-491b-aaf5-ea6c5e0ab72e">
+      <name>Документ_торо_УчетНаработкиОборудования</name>
+      <description>Документ &quot;Учет наработки оборудования&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="a0d2bb85-ece9-429e-8030-bdf1fc54536f">
+      <name>Справочник_Должности</name>
+      <description>Доп. свойства справочника &quot;Должности&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="2e976129-a0dd-48c9-bfc3-4eaf7668a3d0">
+      <name>Справочник_Сотрудники</name>
+      <description>Доп. свойства справочника &quot;Сотрудники&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="4b1f6bdf-16e9-480e-8012-6474f53e56ac">
+      <name>Справочник_ПапкиФайлов</name>
+      <description>Папка</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="09343521-4f35-4e03-97e0-96ee8bf911c6">
+      <name>Справочник_Пользователи</name>
+      <description>Пользователи</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="a5396f9f-93ae-4b29-bdd8-964911334bd5">
+      <name>Справочник_СерииНоменклатуры</name>
+      <description>Серии номенклатуры</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="f056010a-9a26-40e4-a5e3-fcf916cad635">
+      <name>Справочник_торо_ВидыДефектов</name>
+      <description>Справочник &quot;Виды дефектов&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="cc12f28c-0b23-4862-8721-493fe135aa39">
+      <name>Справочник_ВидыНоменклатуры</name>
+      <description>Справочник &quot;Виды номенклатуры&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="ba4c922d-2a2c-4b81-8949-5bda9cecbe8b">
+      <name>Справочник_ВидыЦен</name>
+      <description>Справочник &quot;Виды цен&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="6953aa3c-1817-4285-b6c3-451af6c62ff4">
+      <name>Справочник_торо_ВидыЭксплуатации</name>
+      <description>Справочник &quot;Виды эксплуатации&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="6470c1c9-3029-44d4-963d-effb60efa275">
+      <name>Справочник_ДоговорыКонтрагентов</name>
+      <description>Справочник &quot;Договоры с контрагентами&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="958346b5-718f-4673-aa6a-e1a470f19b2c">
+      <name>Справочник_ДополнительныеОтчетыИОбработки</name>
+      <description>Справочник &quot;Дополнительные отчеты и обработки&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="b0defc7a-8090-45a9-83c3-0e6a1b7e2e43">
+      <name>Справочник_КонтактныеЛицаПартнеров</name>
+      <description>Справочник &quot;Контактные лица&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="d373db26-bb17-49da-903b-06a241e18960">
+      <name>Справочник_Контрагенты</name>
+      <description>Справочник &quot;Контрагенты&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="8b2b3f01-b114-4fce-9122-4072aab8436c">
+      <name>Справочник_торо_КритичностьДефекта</name>
+      <description>Справочник &quot;Критичность дефекта&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="701f9ca3-aab3-49a8-8983-a6f2b05df9ba">
+      <name>Справочник_Организации</name>
+      <description>Справочник &quot;Организации&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="6446a519-98fd-42e9-a920-15a33a5038a4">
+      <name>Справочник_торо_ПричиныДефектов</name>
+      <description>Справочник &quot;Причины дефектов&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="9232936e-9299-4726-9699-810479aa3482">
+      <name>Справочник_торо_ПричиныПростояОборудования</name>
+      <description>Справочник &quot;Причины простоя оборудования&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="0f5a0ec7-ca12-410e-a040-b001d1cb31bb">
+      <name>Справочник_торо_РемонтныеБригады</name>
+      <description>Справочник &quot;Ремонтные бригады&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="0fe84342-e764-4c2e-b371-5e455794ca8c">
+      <name>Справочник_торо_РесурсыРемонтнойБригады</name>
+      <description>Справочник &quot;Ресурсы ремонтной бригады&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="28273243-9fc7-4c29-9455-98db6e64e3ec">
+      <name>Справочник_Склады</name>
+      <description>Справочник &quot;Склады&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="b3e045cb-c3f2-4140-b154-beb324564faa">
+      <name>Справочник_торо_СписокОбъектовРегламентногоМероприятия</name>
+      <description>Справочник &quot;Списки объектов регламентного мероприятия&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="02459238-2a01-4f73-9cbd-46e8b08ffe4d">
+      <name>Справочник_торо_СпособыПланированияРемонтныхРабот</name>
+      <description>Справочник &quot;Способы планирования ремонтных работ&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="9b54a239-dd07-4ce5-ad6f-c35fd21a61a0">
+      <name>Справочник_СтруктураПредприятия</name>
+      <description>Справочник &quot;Структура предприятия&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="b80305fe-b49d-4fcb-91f5-2a977cccab98">
+      <name>Справочник_торо_ИдентификаторыТехКарт</name>
+      <description>Справочник &quot;Технологические карты&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="444bd7f3-5f3a-4109-85b6-bce79583f763">
+      <name>Справочник_торо_ТехнологическиеОперации</name>
+      <description>Справочник &quot;Технологические операции&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="dbadb44f-5f6a-43e6-abe4-7a44a413ff3f">
+      <name>Справочник_торо_УсловияВыявленияДефекта</name>
+      <description>Справочник &quot;Условия выявления дефектов&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="bc03f7e2-8e18-415b-b146-8dc047458f28">
+      <name>Справочник_ФизическиеЛица</name>
+      <description>Справочник &quot;Физические лица&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="00e33f58-9a02-471c-968b-22cb087ac0f8">
+      <name>Справочник_Файлы</name>
+      <description>Файл</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.НаборыДополнительныхРеквизитовИСведений.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.НаборыДополнительныхРеквизитовИСведений.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.НаборыДополнительныхРеквизитовИСведений.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.НаборыДополнительныхРеквизитовИСведений.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="208c7b8c-3df9-4441-8ebf-34ffa81572a2">
+    <name>КоличествоРеквизитов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество реквизитов</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество реквизитов в наборе не помеченных на удаление.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8c17fd7c-74d7-496a-a843-42022afb0707">
+    <name>КоличествоСведений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество сведений</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество сведений в наборе не помеченных на удаление.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="091ccac1-9a63-4a89-bb0c-333b274b0c70">
+    <name>Используется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используется</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Набор свойств отображается в форме списка</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="b456d820-8034-4381-960d-66d9f86b0a4b">
+    <producedTypes>
+      <objectType typeId="fb3fdc57-82e3-4fa7-bccd-b12e88c2fc2f" valueTypeId="63d4cced-9612-4b30-ae1f-23e3f330d6c5"/>
+      <rowType typeId="ce2f4026-0a10-44c8-97b5-a979161cab23" valueTypeId="f73225c3-2dbf-4502-a113-86d134f0bc71"/>
+    </producedTypes>
+    <name>ДополнительныеРеквизиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные реквизиты</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="bd55fd03-cf67-4333-a554-98e03d18f780">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дополнительный реквизит</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дополнительный реквизит этого набора</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <quickChoice>DontUse</quickChoice>
+      <createOnInput>Use</createOnInput>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6eac5f7b-0952-4c94-9028-529b14ffcd4f">
+      <name>ПометкаУдаления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пометка удаления</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Устанавливается при исключении дополнительного реквизита из набора,
+чтобы можно было вернуть связь с уникальным дополнительным реквизитом.</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <use>ForFolderAndItem</use>
+  </tabularSections>
+  <tabularSections uuid="1a7c774d-5b86-4051-b797-3081e19fa30a">
+    <producedTypes>
+      <objectType typeId="b8d89eda-0906-414a-b98a-52474671f8f0" valueTypeId="061a06e9-2847-4a9d-bb90-e6dc48171b6e"/>
+      <rowType typeId="44721b9c-cf58-40c0-915c-2ad6eb746138" valueTypeId="db901fef-6ba7-4d1c-ab7b-cf4eba31c974"/>
+    </producedTypes>
+    <name>ДополнительныеСведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные сведения</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="00949768-5833-4fe2-8752-b009d1bceef8">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дополнительное сведение</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дополнительное сведение этого набора</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <quickChoice>DontUse</quickChoice>
+      <createOnInput>Use</createOnInput>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="167455d1-6658-409f-834c-f6ccfe7b25de">
+      <name>ПометкаУдаления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пометка удаления</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Устанавливается при исключении дополнительного сведения из набора,
+чтобы можно было вернуть связь с уникальным дополнительным сведением.</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <use>ForFolderAndItem</use>
+  </tabularSections>
+  <forms uuid="c5b3ca21-8f7b-4933-853c-7d95b17b5631">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8b0faa1e-09da-4ba4-894e-e86abc5d39df">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cb50b309-1b6c-400c-9e9e-67204dcccaae">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e2b482cb-6954-4e6a-abe9-d0a01f64b73a">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="2a6e1f2b-7378-456b-9657-9e971eaff716">
+    <name>ДополнительныеРеквизиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные реквизиты</value>
+    </synonym>
+    <comment></comment>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="c3cdea20-3055-4b4e-a531-a02d4f3ed294">
+    <name>ДополнительныеСведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные сведения</value>
+    </synonym>
+    <comment></comment>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Catalog>

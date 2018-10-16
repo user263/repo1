@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60d60de8-2c02-4c5e-b98c-6617263a3cfd">
+  <producedTypes>
+    <managerType typeId="84b0b916-1ab7-4dc6-9c50-9cee1908e1c8" valueTypeId="adebfa08-993a-4dfd-918f-8bed15ae44c3"/>
+    <valueManagerType typeId="b7089a1e-8368-4474-8fb0-1f9c24196cf7" valueTypeId="9210ce8e-e80d-43a1-93b6-8f290e4c3c22"/>
+  </producedTypes>
+  <name>торо_ДетальнаяНастройкаВРазрезеНаправлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Детальная настройка в разрезе направлений</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

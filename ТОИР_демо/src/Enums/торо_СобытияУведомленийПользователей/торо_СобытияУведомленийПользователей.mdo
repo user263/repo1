@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b9749dd-e074-4d44-afd5-576e2cfc5400">
+  <producedTypes>
+    <refType typeId="641855e1-8447-4fb7-901e-a5fefb9c48fc" valueTypeId="9bb49646-2359-4cbc-b12d-dc3232b47e90"/>
+    <listType typeId="16f59ca7-4118-46fd-ba53-5fda3925b7bc" valueTypeId="c342af00-03b4-4585-a4a6-4f6985978812"/>
+    <managerType typeId="70f425a7-e46a-4be0-aad3-91d64c100d92" valueTypeId="9b0e80f7-4fda-45e3-b9ca-aa2e37861613"/>
+  </producedTypes>
+  <name>торо_СобытияУведомленийПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>События уведомлений пользователей</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="0ee1ff92-cbdb-46e3-844c-075e9a282f14">
+    <name>РегистрацияДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация документа</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b7d0ea38-3ba0-4280-8a3f-e0c167b8241c">
+    <name>СменаСтатусаСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена статуса согласования</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92d5dc3a-6962-47fd-97ec-eecd3c009e11">
+  <producedTypes>
+    <managerType typeId="ed47ad30-fbab-40b1-bd27-aebf806a60fb" valueTypeId="feff6bdc-2ccb-452a-ae91-35d5865e0273"/>
+    <valueManagerType typeId="4ea83c99-6265-4a52-a47e-e17af7524163" valueTypeId="12f47536-6de0-422b-9e13-6dfe0dcf2d33"/>
+  </producedTypes>
+  <name>торо_УчетКонтролируемыхПоказателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет контролируемых показателей</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

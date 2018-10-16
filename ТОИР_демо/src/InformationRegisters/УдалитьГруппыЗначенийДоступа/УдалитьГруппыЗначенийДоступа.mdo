@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b4d24e8-41bb-41a1-b170-5b59b408c350">
+  <producedTypes>
+    <selectionType typeId="7bccd8f0-1237-44eb-a5f9-73ea997a073f" valueTypeId="d05fddf0-aa70-4051-aec3-3c5ee71a7fe8"/>
+    <listType typeId="7687898e-27e7-4c96-8ede-a8b1fa60e94a" valueTypeId="c28b1f0f-1af1-45c9-a137-65597413fa0c"/>
+    <managerType typeId="7ce96e09-bf44-4ea3-9d65-5aaeca4f979e" valueTypeId="d22426bd-151a-47fb-9b12-29d99813ae00"/>
+    <recordSetType typeId="39c6534f-a8d1-408f-9bce-51580edf2b88" valueTypeId="24b6cc93-8bd4-4b6f-a565-03d616ee2768"/>
+    <recordKeyType typeId="6aa5850e-09aa-4e7c-9814-bbb267cdc793" valueTypeId="af7b872d-8bc1-4b58-8219-aec0ecee83da"/>
+    <recordType typeId="0a8a8b6e-cf6d-400d-9f4c-c1b66596d88f" valueTypeId="bbc01747-cf53-4fb5-ba78-b4b11e128951"/>
+    <recordManagerType typeId="1b78c385-9857-4b2c-96c8-c60018693447" valueTypeId="b3454335-59b0-42f5-9a2c-f06d5ec3dd0a"/>
+  </producedTypes>
+  <name>УдалитьГруппыЗначенийДоступа</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Группы значений доступа</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9c6da899-6ab8-4f3f-b500-c90e5df57e12">
+    <name>НаследоватьПраваРодителей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наследовать права родителей</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Флажок используется для случая установки прав по значениям доступа в иерархических справочниках. Например, по папкам файлов. Когда Истина наследуются права всех родителей для папки в полях &quot;Значение доступа&quot; и &quot;Группа доступа&quot;</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="eace053b-c471-4246-8c19-0c5ad6e1a66d">
+    <name>ВидДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид доступа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.УдалитьВидыДоступа</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид доступа, используемый для значения доступа (обычно один на тип значения доступа).</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>ChartOfCharacteristicTypes.УдалитьВидыДоступа.EmptyRef</value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8cb2f82b-7289-4e88-9da8-653feae81dcf">
+    <name>ЗначениеДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение доступа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>AnyRef</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Элемент справочника или другого объекта метаданных, для которого используются группы значений доступа (контрагент, номенклатура)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6bbab65f-c96a-4452-b8d3-a6d12e7b2fdd">
+    <name>ТолькоВидДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Только вид доступа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Флажок показывает, что в строке задана не группа значений указанного значения доступа, а использование вида доступа для значения доступа (используется для случая нескольких видов доступа для одного типа значения доступа)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2fce5750-e9d1-4cbd-a7ad-0d94adf69288">
+    <name>ГруппаЗначенийДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа значений доступа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>AnyRef</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Обычно элемент справочника, который используется для группировки значений доступа (например, элемент справочника Группы доступа номенклатуры).</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7c11e2ac-6dd0-4bd4-a6e1-fea4943d69de">
+    <name>ГруппаОбновляемыхДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа обновляемых данных</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вспомогательная характеристика используемая только при обновлении данных.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

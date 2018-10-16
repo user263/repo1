@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="be0490fb-3e00-491b-bd14-840e15f7bb90">
+  <name>ИспользоватьПартнеровИКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать партнеров и контрагентов</value>
+  </synonym>
+  <comment></comment>
+  <location>Constant.ИспользоватьПартнеровИКонтрагентов</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Document.ПоступлениеТоваровУслуг.Attribute.Контрагент</content>
+  <content>Catalog.ДоговорыКонтрагентов.Attribute.Контрагент</content>
+  <content>Catalog.Партнеры.Command.Партнеры</content>
+  <content>Catalog.Партнеры.Command.НовыйЭлемент</content>
+</mdclass:FunctionalOption>

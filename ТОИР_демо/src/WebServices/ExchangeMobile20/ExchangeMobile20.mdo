@@ -1,0 +1,1224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8893a06-8172-44da-b943-96b6b5700bce">
+  <name>ExchangeMobile20</name>
+  <synonym>
+    <key>ru</key>
+    <value>Exchange mobile 2.0</value>
+  </synonym>
+  <comment></comment>
+  <namespace>exchange</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.Android</value>
+  </xdtoPackages>
+  <descriptorFileName>ws1.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="194146b4-c488-4aee-a131-8cb645e9b9af">
+    <name>ВерсияОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия обмена</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>int</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ВерсияОбмена</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+  </operations>
+  <operations uuid="5496e5eb-9481-4539-9116-62f7593eb47a">
+    <name>ПолучитьОР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить ОР</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокОР</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьОР</procedureName>
+    <parameters uuid="f0b7055c-d810-4ac5-814b-9b50f09c558e">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="bdcacacc-7aed-420d-82df-c536abf2844c">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="2d26a84f-071a-4c0d-a513-b835c81302c0">
+    <name>ПолучитьСтруктуруИерархии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить структуру иерархии</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СтруктураИерархии</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьСтруктуруИерархии</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="bc37bdfc-5409-4030-b29b-0cb3664d7c82">
+      <name>ИмяПользователя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя пользователя</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="187953d4-3426-484a-8ae4-b4cdc20c69cd">
+    <name>ПолучитьОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить организации</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокОрганизаций</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьОрганизации</procedureName>
+    <parameters uuid="c1bb43b0-4749-4486-bf22-59b164819e92">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="047008f0-0a71-452e-99d6-cbe47c09fd91">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="221b88fd-0243-4ae5-872a-2b03013b38e7">
+    <name>ПолучитьВидыДефектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить виды дефектов</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокВидовДефектов</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьВидыДефектов</procedureName>
+    <parameters uuid="3873e8da-f43c-4397-a3f2-1e3a26323d74">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="c0d4cfb4-f194-4198-8b97-7a58b8979fe2">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="acd087b9-1576-44d9-bbe2-5a7f09aba7e3">
+    <name>ПолучитьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить единицы измерения</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокЕдиницИзмерения</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьЕдиницыИзмерения</procedureName>
+    <parameters uuid="481aad3c-7ea7-4a96-a28f-703cbe78a8cc">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="2352a494-75ab-471e-b5ba-634c632c2218">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="8f39ce22-79ef-410b-9155-952213fbf171">
+    <name>ПолучитьИзмеряемыеПоказатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить измеряемые показатели</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокИзмеряемыхПоказателей</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьИзмеряемыеПоказатели</procedureName>
+    <parameters uuid="680b9ff2-585c-4fb3-96bc-ec008e36a272">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="a827f908-cc25-41aa-a7f6-529516d2eb17">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="5a7957da-b9f3-4d80-9baa-5ec65afa12ac">
+    <name>ПолучитьНоменклатуру</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить номенклатуру</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокНоменклатуры</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьНоменклатуру</procedureName>
+    <parameters uuid="9940e348-b8d4-459b-8c50-ab0b01afd227">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="899eb40e-82ab-4871-a90f-8b2695e26053">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="ce384d93-a2db-4839-9cd6-da3a3ec7c687">
+    <name>ПолучитьПричиныДефектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить причины дефектов</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокПричинДефектов</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьПричиныДефектов</procedureName>
+    <parameters uuid="4dd7547e-f3cc-4e95-9728-75ecb1a74c8b">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="6baa32f1-54cd-4dfc-9a13-fed8fce0d661">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="9419848d-2852-4b5b-8470-01e4a90053a2">
+    <name>ПолучитьПричиныПростоев</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить причины простоев</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокПричинПростоев</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьПричиныПростоев</procedureName>
+    <parameters uuid="3f38438c-e9e9-4345-a0d4-405a80dd87ce">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="b86a0c9a-c078-444a-bf5e-92bcd4eeb2f1">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="50d41829-1105-4859-acf3-f2e7f29bd681">
+    <name>ПолучитьРемонтныеГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить ремонтные группы</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокРемонтныхГрупп</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьРемонтныеГруппы</procedureName>
+    <parameters uuid="556437de-a3d3-4a78-9422-7dc7ec308182">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="9553e5cb-6ead-4377-b1fe-44645104f7a9">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="d336903b-dcd6-4a70-801f-b2a15fd20fd5">
+    <name>ПолучитьПараметрыВыработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить параметры выработки</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокПараметровВыработкиОС</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьПараметрыВыработки</procedureName>
+    <parameters uuid="0b9b896a-bda5-4601-89fd-a85c7065c8ec">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="c95b178f-ee1f-4461-9431-b334e4a7b544">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="aa4be12a-41b5-42ad-bde7-f5182505060b">
+    <name>ПолучитьТиповыеДефекты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить типовые дефекты</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокТиповыхДефектовОборудования</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьТиповыеДефекты</procedureName>
+    <parameters uuid="908256e8-10ae-435b-b5a2-8c6a20f830bd">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="5a35b43b-fc03-44a1-a65f-c51e16088ff4">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="bebbd9a3-8ed0-4145-a4ae-6941b983cd73">
+    <name>ПолучитьКритичностиДефектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить критичности дефектов</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокКритичностейДефекта</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьКритичностиДефектов</procedureName>
+    <parameters uuid="205f61df-9d75-4e3c-91da-afc21db5eea8">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="f6cb1c08-8cad-428e-b15d-4228c8d76c21">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="4e9c6ce3-203d-4ffe-a01d-8149c2bcd16e">
+    <name>ПолучитьУсловияВыявления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить условия выявления</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокУсловийВыявленияДефекта</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьУсловияВыявления</procedureName>
+    <parameters uuid="d7cbed0f-973a-43b0-b719-d350666f54fe">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="32f85a81-df18-4baf-8252-131c27101583">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="2b03bdeb-8b1b-4cb4-a802-abf84f5b79f4">
+    <name>ПолучитьПодразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить подразделения</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокПодразделений</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьПодразделения</procedureName>
+    <parameters uuid="ab2301e5-ad61-4d7f-9e1b-6bc11023a463">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="02eae135-f9da-4c54-b32b-9593b1b13a00">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="c94b4267-9c00-4ef3-a378-29f722a9d9c6">
+    <name>ПолучитьВидыЭксплуатации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить виды эксплуатации</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокВидовЭксплуатации</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьВидыЭксплуатации</procedureName>
+    <parameters uuid="b79ef952-7b0f-4e25-b3a5-4c71b33a1912">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="9ad44b94-3d25-42de-b9b7-83fa7744408c">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="14a1b755-f597-4734-b6b7-8939350230f9">
+    <name>ПолучитьНаработкуОР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить наработку ОР</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокНаработкаОР</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьНаработкуОР</procedureName>
+    <parameters uuid="8e2ded25-d68d-4d4f-b8d9-2ec6c4704c3b">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="b9fa46a0-3c46-4efa-b0ad-7082d9a37dfe">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="839d351d-da8f-449d-b86b-da7a380f46da">
+    <name>ПолучитьПараметрыНаработкиОР_рс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить параметры наработки о р рс</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>рс_СписокПараметрыНаработки</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьПараметрыНаработкиОР_рс</procedureName>
+    <parameters uuid="0e7932c2-53bf-4a26-b22e-8a6f4c986cc3">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="7e19d2a6-42e4-4ff1-9cb6-d23738efb496">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="9e306848-365f-4d42-a9cc-d55c5c8068f3">
+    <name>ПолучитьТекущееСостояниеОР_рс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить текущее состояние о р рс</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>рс_СписокТекущееСостоянияОР</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьТекущееСостояниеОР_рс</procedureName>
+    <parameters uuid="6d0a50ec-4216-43c6-b9d8-69662027d9eb">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="c544559f-f280-4a77-96f4-55f0bc268f17">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="d627454a-d80a-42f2-a3bb-829f98fb4d85">
+    <name>ПолучитьИзмеряемыеПоказателиОР_рс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить измеряемые показатели о р рс</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>рс_СписокИзмеряемыеПоказателиОР</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьИзмеряемыеПоказателиОР_рс</procedureName>
+    <parameters uuid="c0bcac49-c9f5-4d9c-9e28-306c9d9648ab">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="747d6cd6-c6e9-45e4-a5ad-c34b019a59e2">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="786f386e-bb07-4257-a3b8-488e69bf46af">
+    <name>ПередатьДефект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передать дефект</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СтруктураОтвета</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПередатьДефект</procedureName>
+    <parameters uuid="5740a555-5244-454f-a60b-aa1d7a5496d2">
+      <name>ВыявленныйДефект</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выявленный дефект</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>ВыявленныйДефект</name>
+        <nsUri>android</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="68f085c4-2751-42c9-87d1-fdc372f15e74">
+    <name>ПередатьСостояниеОР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передать состояние ОР</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СтруктураОтвета</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПередатьСостояниеОР</procedureName>
+    <parameters uuid="d8426188-6031-4dd3-b07c-b33886cd4dfc">
+      <name>СостояниеОР</name>
+      <synonym>
+        <key>ru</key>
+        <value>Состояние ОР</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>СостояниеОР</name>
+        <nsUri>android</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="fc1c5aae-b36e-43f9-9cdd-537d2e81e2ae">
+    <name>ПередатьУчетНаработкиОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передать учет наработки оборудования</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СтруктураОтвета</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПередатьУчетНаработкиОборудования</procedureName>
+    <parameters uuid="0748655b-57d3-4ac9-83e2-2c0f7d42bd07">
+      <name>УчетНаработкиОборудования</name>
+      <synonym>
+        <key>ru</key>
+        <value>Учет наработки оборудования</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>УчетНаработкиОборудования</name>
+        <nsUri>android</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="1c5a98e2-3dc9-4c58-ad17-a84d30c4762c">
+    <name>ПередатьУчетКонтролируемыхПоказателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передать учет контролируемых показателей</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СтруктураОтвета</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПередатьУчетКонтролируемыхПоказателей</procedureName>
+    <parameters uuid="87310444-37e1-41b9-b935-39aaf4645d35">
+      <name>УчетКонтролируемыхПоказателей</name>
+      <synonym>
+        <key>ru</key>
+        <value>Учет контролируемых показателей</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>УчетКонтролируемыхПоказателей</name>
+        <nsUri>android</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="2d871d5c-3265-4184-8dc8-3580cd658891">
+    <name>WriteObjectPhoto</name>
+    <synonym>
+      <key>ru</key>
+      <value>Write object photo</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>WriteObjectPhoto</procedureName>
+    <parameters uuid="b913a77f-5791-448a-af6a-e38ab156c9bd">
+      <name>Code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Code</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="97fd64dd-27a0-4f38-88a7-eb0aa10cd006">
+      <name>Photo</name>
+      <synonym>
+        <key>ru</key>
+        <value>Photo</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="96794262-38a8-4357-b4d1-88d73487cd9d">
+      <name>Comment</name>
+      <synonym>
+        <key>ru</key>
+        <value>Comment</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="777614b0-8aa2-4e11-9baa-1ee5794fc03c">
+      <name>Type</name>
+      <synonym>
+        <key>ru</key>
+        <value>Type</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="1c5430e2-25f5-42d3-82db-8412a51a328e">
+    <name>ПолучитьКоличества</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить количества</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>Количество</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьКоличества</procedureName>
+    <parameters uuid="3756143d-da3f-40f1-a024-b080480f2c56">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="a2db0508-f498-4f0e-897c-7f4940001454">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="a8d202fa-d1d1-4274-8b82-e8ba575aea19">
+    <name>WriteZipCode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Write zip code</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>WriteZipCode</procedureName>
+    <parameters uuid="0803e281-c1d9-45cb-a81b-b1fd0b6687dd">
+      <name>Code</name>
+      <synonym>
+        <key>ru</key>
+        <value>Code</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="a2f0ac23-d823-4504-9f21-86d472d07166">
+      <name>ZipCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Zip code</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="86be2134-47d7-4323-b201-03d036be5ed6">
+    <name>ВернутьНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вернуть номер</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ВернутьНомер</procedureName>
+    <parameters uuid="de9e6c29-f483-4f03-8827-ff65123f2ce1">
+      <name>Документ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="33b60c16-d72e-478a-80fe-15d5158d7e5d">
+      <name>Префикс</name>
+      <synonym>
+        <key>ru</key>
+        <value>Префикс</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="17bb9ad3-9ca0-489d-bb25-c796de66f45f">
+    <name>Hello</name>
+    <synonym>
+      <key>ru</key>
+      <value>Hello</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>Hello</procedureName>
+  </operations>
+  <operations uuid="e8c2c507-de1e-4d01-ae72-364ac8a8ad0d">
+    <name>ПолучитьНаправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить направления</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>СписокТиповыхДефектовОборудования</name>
+      <nsUri>android</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьНаправления</procedureName>
+    <parameters uuid="839e905e-2200-4076-901c-42a365a75978">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="247b9649-2b8b-4ca6-be15-206bce82db9d">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="2b0d1d8f-b254-44e5-845f-9cfe720ce05e">
+    <name>ПроверитьДобавитьРегистрациюУстройства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверить добавить регистрацию устройства</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>boolean</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПроверитьДобавитьРегистрациюУстройства</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="104da470-16b3-4cd0-bd1b-a3f34dab4dca">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="17ac01c8-7e79-4e9a-804b-7d4bbbb92846">
+    <name>ПередатьФотоДефекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передать фото дефекта</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПередатьФотоДефекта</procedureName>
+    <parameters uuid="ecdc0616-c9d6-4129-8873-70077cc94269">
+      <name>ВыявленныйДефект</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выявленный дефект</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>ВыявленныйДефект</name>
+        <nsUri>android</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="6474515b-5da3-46b1-9b78-06885e7eaf39">
+      <name>Фото</name>
+      <synonym>
+        <key>ru</key>
+        <value>Фото</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>Фото</name>
+        <nsUri>android</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="bee60710-e93a-4b13-97a7-133a0da84ce9">
+    <name>ПолучитьИерархиюОР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить иерархию ОР</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПолучитьИерархиюОР</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="5732e9c1-2ea0-479b-89ef-8477280df501">
+      <name>Всё</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всё</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="81a54076-c2c7-48c0-9a26-bc760b860e69">
+      <name>ИДУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДУстройства</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="014c871e-c83c-4ddb-8a26-c82dbc102845">
+      <name>ИДСтруктуры</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИДСтруктуры</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

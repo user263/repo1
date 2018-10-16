@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea35e8c4-bee5-4fba-a272-093ae20dc1a1">
+  <producedTypes>
+    <objectType typeId="b532f1ea-1fb0-4cf2-8253-b12b4b7eec1e" valueTypeId="45b6a905-4e8d-40a8-aa35-aece9f548d71"/>
+    <managerType typeId="9ddc349a-77a4-44fa-a6d6-4c00d6def7eb" valueTypeId="cf9941c3-d9d8-47ad-8a54-ddc7b8af016c"/>
+  </producedTypes>
+  <name>торо_ЗащитаУправлениеРемонтами82</name>
+  <synonym>
+    <key>ru</key>
+    <value>Защита управление ремонтами82</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+</mdclass:DataProcessor>

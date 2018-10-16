@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="883f819e-76c5-419e-93e9-376dc8f150c8">
+  <name>ОбменТОиР20УППСобытия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен ТОиР 2.0 УПП 1.3</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+</mdclass:CommonModule>

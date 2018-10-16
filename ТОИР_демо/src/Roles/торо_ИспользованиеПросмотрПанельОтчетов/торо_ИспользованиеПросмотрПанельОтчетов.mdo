@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7eacbebb-1ddf-468d-a0e9-5218606a2bc6">
+  <name>торо_ИспользованиеПросмотрПанельОтчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование и просмотр панели отчетов.</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

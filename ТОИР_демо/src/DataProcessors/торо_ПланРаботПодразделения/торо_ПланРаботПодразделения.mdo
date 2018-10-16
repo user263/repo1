@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="24e32cd7-c8b2-455e-9c77-ef048b6ba0a0">
+  <producedTypes>
+    <objectType typeId="f8bb9535-d30b-4cd9-a9bf-285e8d8e5941" valueTypeId="7d343aa1-546e-4266-9934-ed00c4dcf9d4"/>
+    <managerType typeId="5cbb705e-3820-4de3-8b07-09a9d4bd7af2" valueTypeId="048a8b82-1102-4984-b703-4a5b106873fa"/>
+  </producedTypes>
+  <name>торо_ПланРаботПодразделения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общий план работ подразделения</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.торо_ПланРаботПодразделения.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="fe55f855-9d50-4617-aebe-2e0bcbd5156e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="65150dcc-a4b0-4e01-ab16-97b579382844">
+    <name>ФормаВводаПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ввода периода</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="3532fdf8-a976-42be-8ce2-2bce52d5d646">
+    <name>МакетПланаРемонтовНаПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет плана ремонтов на период</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <commands uuid="9c962c0b-adf0-4c10-a47b-b73a7718dba1">
+    <name>ОбщийПланРаботПодразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общий план работ подразделения</value>
+    </synonym>
+    <comment></comment>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

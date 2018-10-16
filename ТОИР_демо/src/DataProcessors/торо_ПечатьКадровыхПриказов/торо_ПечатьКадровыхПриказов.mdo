@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="41fc7a7d-27a4-4ce4-ab92-49f65c786ba2">
+  <producedTypes>
+    <objectType typeId="7c8c4008-ec32-4efe-96c9-42ead5d558f0" valueTypeId="7d51cde6-598d-4a62-bf57-ff95aa6b71ce"/>
+    <managerType typeId="4ab6e53d-93ca-4fbe-9e54-4a62bbe7d738" valueTypeId="000c870d-5472-482b-bae2-27e2a76ff7a9"/>
+  </producedTypes>
+  <name>торо_ПечатьКадровыхПриказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать кадровых приказов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="2ac8a1ab-f0cf-470b-a7ef-6260c304efb4">
+    <name>ПФ_MXL_Т1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказ о приеме (Т-1)</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="bd620875-e10d-40e0-b3b8-c783ae598f9d">
+    <name>ПФ_MXL_Т5</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказ о переводе (Т-5)</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="e1150641-836e-4a0c-b391-35817078099e">
+    <name>ПФ_MXL_Т8</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказ об увольнении (Т-8)</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:DataProcessor>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f9767d2d-ed15-4d02-924c-1fe72d29c1ba">
+  <producedTypes>
+    <containerType typeId="7f9721d6-ea24-427a-b23a-af11b08a4018" valueTypeId="cfcdc881-4593-4c45-9abd-8c3780ce0ebe"/>
+  </producedTypes>
+  <name>ЗначениеДоступаСГруппамиЗначенийДоступаОбъект</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значение доступа с группами значений доступа объект</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogObject.ИдентификаторыОбъектовМетаданных</types>
+  </type>
+</mdclass:DefinedType>

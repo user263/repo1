@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="01fb0fe1-d999-4e7b-9242-7f0080b37748">
+  <name>торо_МТО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление МТО ремонтов</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаЗапасыИЗакупки</picture>
+  </picture>
+  <content>Document.ПоступлениеТоваровУслуг</content>
+  <content>Catalog.ХарактеристикиНоменклатуры</content>
+  <content>Document.УстановкаЦенНоменклатуры</content>
+  <content>InformationRegister.ЦеныНоменклатуры</content>
+  <content>Document.ПеремещениеТоваров</content>
+  <content>Enum.СтатусыПеремещенийТоваров</content>
+  <content>Document.торо_УстановкаМинимальногоОстаткаНоменклатуры</content>
+  <content>InformationRegister.торо_МинимальныеОстаткиНоменклатуры</content>
+  <content>CommonCommand.торо_ДополнительныеОтчетыМТО</content>
+  <content>CommonCommand.торо_ДополнительныеОбработкиМТО</content>
+  <content>Document.ВнутреннееПотреблениеТоваров</content>
+  <content>Document.ЗаказНаВнутреннееПотребление</content>
+  <content>AccumulationRegister.ЗаказыНаВнутреннееПотребление</content>
+  <content>Role.торо_РазделМТО</content>
+  <content>Role.торо_ЧтениеУстановокМинимальныхОстатковНоменклатуры</content>
+  <content>Role.торо_ДобавлениеИзменениеПроведениеПометкаУдаленияУстановокМинимальныхОстатковНоменклатуры</content>
+  <content>Role.ЧтениеВнутреннихПотребленийТоваров</content>
+  <content>Role.ДобавлениеИзменениеПроведениеПометкаУдаленияВнутреннихПотребленийТоваров</content>
+  <content>Role.ЧтениеЗаказовНаВнутреннееПотребление</content>
+  <content>Role.ДобавлениеИзменениеПроведениеПометкаУдаленияЗаказовНаВнутреннееПотребление</content>
+  <content>Role.ЧтениеОприходованийИзлишковТоваров</content>
+  <content>Role.ДобавлениеИзменениеПроведениеПометкаУдаленияОприходованийИзлишковТоваров</content>
+  <content>Role.ЧтениеПеремещенийТоваров</content>
+  <content>Role.ДобавлениеИзменениеПроведениеПометкаУдаленияПеремещенийТоваров</content>
+  <content>Role.ЧтениеПоступленийТоваровУслуг</content>
+  <content>Role.ДобавлениеИзменениеПроведениеПометкаУдаленияПоступленийТоваровУслуг</content>
+  <content>Role.ЧтениеСписанийНедостачТоваров</content>
+  <content>Role.ДобавлениеИзменениеПроведениеПометкаУдаленияСписанийНедостачТоваров</content>
+  <content>Role.ЧтениеУстановокЦенНоменклатуры</content>
+  <content>Role.ДобавлениеИзменениеПроведениеПометкаУдаленияУстановокЦенНоменклатуры</content>
+  <content>Report.торо_ПланФактЗатрат</content>
+  <content>AccumulationRegister.ТоварыНаСкладах</content>
+  <content>Document.ОприходованиеИзлишковТоваров</content>
+  <content>Document.СписаниеНедостачТоваров</content>
+  <content>Report.ВедомостьПоТоварамНаСкладах</content>
+  <content>Constant.торо_ИспользоватьКонтрольОтрицательныхОстатков</content>
+  <content>CommonPicture.ПодсистемаЗапасыИЗакупки</content>
+  <content>Report.торо_ПланМТОТрудозатратИнструментов</content>
+  <content>DataProcessor.торо_ПолучениеИВозвратМатериалов</content>
+  <content>Document.торо_УстановкаАналоговНоменклатурыДляРемонтов</content>
+  <content>Report.УниверсальныйОтчет</content>
+</mdclass:Subsystem>
